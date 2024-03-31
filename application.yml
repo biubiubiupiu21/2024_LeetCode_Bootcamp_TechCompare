@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://tcAdmin:123456@localhost:27017/techCompare
