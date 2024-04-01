@@ -13,11 +13,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
 
-//    @Id
-//    private Long id;
+    @Id
+    private int id;
     private String firebase_id;
     private String email;
     private String password;
-    private String[] wishlist;
+    private int[] wishlist;
 
 }

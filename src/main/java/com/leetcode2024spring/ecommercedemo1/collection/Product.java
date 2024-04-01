@@ -32,8 +32,8 @@ class Review {
 }
 
 public class Product {
-//    @Id
-//    private int id;
+    @Id
+    private int id;
     private String product_name;
     private double current_price;
     private String category;
