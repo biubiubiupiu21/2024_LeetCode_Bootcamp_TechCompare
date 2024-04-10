@@ -1,4 +1,5 @@
 spring:
   data:
     mongodb:
+#      change username, pwd and database name
       uri: mongodb://tcAdmin:123456@localhost:27017/techCompare

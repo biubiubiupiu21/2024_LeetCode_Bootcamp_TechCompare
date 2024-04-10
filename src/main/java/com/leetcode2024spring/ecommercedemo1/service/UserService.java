@@ -1,13 +1,16 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
-import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.User;
-import java.util.*;
+import org.springframework.http.ResponseEntity;
 
 public interface UserService {
 
 
-    String save(User user);
+    User findByEmail(String email);
 
-    User getUser(int userId);
+    long count();
+
+    String save(User user);
+    ResponseEntity<User> registerUser(User user);
+    boolean loginUser(String email, String password);
 }
