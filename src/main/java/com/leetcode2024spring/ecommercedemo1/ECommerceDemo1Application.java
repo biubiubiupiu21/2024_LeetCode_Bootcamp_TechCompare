@@ -38,8 +38,8 @@ public class ECommerceDemo1Application {
             };
 
             Review[] reviews ={
-                    new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),34),
-                    new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),9)
+                    new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),"aaabbbb@test.com"),
+                    new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),"bbbccc@test.com")
             };
 
             Product product = new Product("109", "custom-id-laptop-109",1100.00,"Laptop","Dell","G15",specs,priceHistories,reviews);

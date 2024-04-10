@@ -1,6 +1,9 @@
 package com.leetcode2024spring.ecommercedemo1.collection;
 
+import lombok.Builder;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 class Location{
     private double longitude;
@@ -8,12 +11,16 @@ class Location{
 }
 
 class Inventory{
-    private int product_id;
+    private String productStringId;
     private int quantity;
 }
+
+@Data
+@Builder
+
+@Document(collection = "Store")
 public class Store {
-    @Id
-    private int id;
+//    @Id
     private String name;
     private Location location;
     private String address;

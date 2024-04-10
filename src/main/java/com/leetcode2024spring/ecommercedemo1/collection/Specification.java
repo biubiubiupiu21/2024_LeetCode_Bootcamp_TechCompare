@@ -4,8 +4,7 @@ import java.util.Map;
 
 public class Specification {
     private Map<String, String> details;
+    public Specification(Object detail) {
 
-    public Specification(Map<String, String> details) {
-        this.details = details;
     }
 }

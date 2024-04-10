@@ -10,15 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/techCompare/products")
+@RequestMapping("/techCompare/product")
 @AllArgsConstructor
 public class ProductController {
 
     private final ProductServiceImp productService;
 
-    @GetMapping
-    public List<Product> fetchAllProducts(){
-        return productService.getAllProducts();
-    }
 }
 

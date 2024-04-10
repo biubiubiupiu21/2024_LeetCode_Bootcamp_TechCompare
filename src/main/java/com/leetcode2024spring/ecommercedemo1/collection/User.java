@@ -15,6 +15,15 @@ public class User {
 
     private String firebase_id;
     private String email;
+
+    public String[] getWishlist() {
+        return wishlist;
+    }
+
+    public void setWishlist(String[] wishlist) {
+        this.wishlist = wishlist;
+    }
+
     private String password;
     private String[] wishlist;
 
@@ -24,5 +33,7 @@ public class User {
         this.password = password;
         this.wishlist = wishlist;
     }
+
+
 
 }

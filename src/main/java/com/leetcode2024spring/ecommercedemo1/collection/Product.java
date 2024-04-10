@@ -12,11 +12,11 @@ import java.util.Map;
 @Data
 @Builder
 
-@Document(collection = "Products")
+@Document(collection = "Product")
 public class Product {
     public static final String SEQUENCE_NAME = "product_sequence";
     //    @Id
-    private String product_string_id;
+    private String productStringId;
 
     private String product_name;
     private double current_price;
@@ -24,11 +24,10 @@ public class Product {
     private String brand;
     private String model;
     private Specification specifications;
-//    private String image;
     private Price_history[] price_history;
     private Review[] review;
 
-    public Product(String product_string_id,
+    public Product(String productStringId,
                    String product_name,
                    double current_price,
                    String category,
@@ -38,7 +37,7 @@ public class Product {
                    Price_history[] price_history,
                    Review[] review) {
 
-        this.product_string_id = product_string_id;
+        this.productStringId = productStringId;
         this.product_name = product_name;
         this.current_price = current_price;
         this.category = category;
