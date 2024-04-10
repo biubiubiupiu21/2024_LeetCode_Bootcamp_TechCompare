@@ -1,5 +1,6 @@
 [
 {
+  "product_string_id":"1",
   "product_name": "Alienware M15 R6 Gaming Laptop",
   "category": "Laptop",
   "brand": "Alienware",
@@ -44,6 +45,7 @@
 },
 
 {
+  "product_string_id":"2",
   "product_name": "Lenovo ThinkPad X1 Carbon Gen 9",
   "category": "Laptop",
   "brand": "Lenovo",
@@ -81,6 +83,7 @@
 },
 
 {
+  "product_string_id":"3",
   "product_name": "MSI Creator Z16",
   "category": "Laptop",
   "brand": "MSI",
@@ -108,6 +111,7 @@
 },
 
 {
+  "product_string_id":"4",
   "product_name": "Acer Aspire 5",
   "category": "Laptop",
   "brand": "Acer",
@@ -139,6 +143,7 @@
 },
 
 {
+  "product_string_id":"5",
   "product_name": "Dell XPS 13 2-in-1",
   "category": "Laptop",
   "brand": "Dell",
@@ -170,6 +175,7 @@
 },
 
 {
+  "product_string_id":"6",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -201,6 +207,7 @@
 },
 
 {
+  "product_string_id":"7",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -232,6 +239,7 @@
 },
 
 {
+  "product_string_id":"8",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -263,6 +271,7 @@
 },
 
 {
+  "product_string_id":"9",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -294,6 +303,7 @@
 },
 
 {
+  "product_string_id":"10",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -325,6 +335,7 @@
 },
 
 {
+  "product_string_id":"11",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -356,6 +367,7 @@
 },
 
 {
+  "product_string_id":"12",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -387,6 +399,7 @@
 },
 
 {
+  "product_string_id":"13",
   "product_name": "Google Pixel 5a",
   "category": "Phone",
   "brand": "Google",
@@ -418,6 +431,7 @@
 },
 
 {
+  "product_string_id":"14",
   "product_name": "Moto G Power (2021)",
   "category": "Phone",
   "brand": "Motorola",
@@ -449,6 +463,7 @@
 },
 
 {
+  "product_string_id":"15",
   "product_name": "Moto G Power (2021)",
   "category": "Phone",
   "brand": "Motorola",
@@ -480,6 +495,7 @@
 },
 
 {
+  "product_string_id":"16",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -511,6 +527,7 @@
 },
 
 {
+  "product_string_id":"17",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -542,6 +559,7 @@
 },
 
 {
+  "product_string_id":"18",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -573,6 +591,7 @@
 },
 
 {
+  "product_string_id":"19",
   "product_name": "Bose Noise Cancelling Headphones 700",
   "category": "Headphone",
   "brand": "Bose",
@@ -602,6 +621,7 @@
 },
 
 {
+  "product_string_id":"20",
   "product_name": "Grado SR80e Prestige Series",
   "category": "Headphone",
   "brand": "Grado",
@@ -630,6 +650,7 @@
 },
 
 {
+  "product_string_id":"21",
   "product_name": "Jaybird Vista 2",
   "category": "Headphone",
   "brand": "Jaybird",
@@ -659,6 +680,7 @@
 },
 
 {
+  "product_string_id":"22",
   "product_name": "JBL Tune 500BT",
   "category": "Headphone",
   "brand": "JBL",
@@ -688,6 +710,7 @@
 },
 
 {
+  "product_string_id":"23",
   "product_name": "Sennheiser HD 660 S",
   "category": "Headphone",
   "brand": "Sennheiser",
@@ -716,6 +739,7 @@
 },
 
 {
+  "product_string_id":"24",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -747,6 +771,7 @@
 },
 
 {
+  "product_string_id":"25",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -778,6 +803,7 @@
 },
 
 {
+  "product_string_id":"26",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -809,6 +835,7 @@
 },
 
 {
+  "product_string_id":"27",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -840,6 +867,7 @@
 },
 
 {
+  "product_string_id":"28",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -871,6 +899,7 @@
 },
 
 {
+  "product_string_id":"29",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -902,6 +931,7 @@
 },
 
 {
+  "product_string_id":"30",
   "product_name": "Samsung Galaxy Tab S7",
   "category": "Pad",
   "brand": "Samsung",
@@ -933,6 +963,7 @@
 },
 
 {
+  "product_string_id":"31",
   "product_name": "Samsung Galaxy Tab S7",
   "category": "Pad",
   "brand": "Samsung",
@@ -964,6 +995,7 @@
 },
 
 {
+  "product_string_id":"32",
   "product_name": "iPad Mini (6th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -995,6 +1027,7 @@
 },
 
 {
+  "product_string_id":"33",
   "product_name": "iPad Mini (6th Generation)",
   "category": "Pad",
   "brand": "Apple",

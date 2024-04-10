@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95107836-6f8b-4f83-bd95-622ce1d38f24" name="Changes" comment="resolve conflicts">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" afterDir="false" />
+    <list default="true" id="410f2792-99aa-446a-8af2-84ae5af5aaad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/product.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ECommerceDemo1Application.executor": "Run",
-    "git-widget-placeholder": "lja__branch",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -93,16 +96,13 @@
       <created>1712725249272</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712725249272</updated>
-      <workItem from="1712725250798" duration="3046000" />
-    </task>
-    <task id="LOCAL-00001" summary="resolve conflicts">
-      <option name="closed" value="true" />
-      <created>1712725433863</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712725433863</updated>
+      <updated>1711926380513</updated>
+      <workItem from="1711926384834" duration="50000" />
+      <workItem from="1711926547113" duration="7651000" />
+      <workItem from="1712078321290" duration="1201000" />
+      <workItem from="1712099421237" duration="10193000" />
+      <workItem from="1712189874777" duration="286000" />
+      <workItem from="1712702648713" duration="1867000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
