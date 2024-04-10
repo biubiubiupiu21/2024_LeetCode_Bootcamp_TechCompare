@@ -14,24 +14,9 @@ public class UserController {
     @Autowired
     private UserServiceImp userService;
 
-//    @GetMapping("/getUser")
-//    public int get(){
-//        return 123;
-//    }
-//
-//    @PostMapping("/addUser")
-//    public String save(@RequestBody User user1){
-//        return userService.save(user1);
-//    }
-
     @GetMapping("/getUser")
     public User findByEmail(String email){
         return userService.findByEmail(email);
-    }
-
-    @PostMapping("/addUser")
-    public String save(@RequestBody User user1){
-        return userService.save(user1);
     }
 
     @PostMapping("/register")
@@ -45,4 +30,6 @@ public class UserController {
         return ResponseEntity.ok(loginSuccess);
     }
 
+//    @GetMapping("/getWishlist")
+//    public
 }

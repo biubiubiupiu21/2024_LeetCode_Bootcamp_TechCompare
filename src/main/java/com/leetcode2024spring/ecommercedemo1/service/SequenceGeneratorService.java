@@ -1,12 +1,12 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
 import com.leetcode2024spring.ecommercedemo1.collection.DatabaseSequence;
+import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
-import org.springframework.data.mongodb.core.FindAndModifyOptions;
 
 @Service
 public class SequenceGeneratorService {

@@ -1,11 +1,14 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
+import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.User;
 import com.leetcode2024spring.ecommercedemo1.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.*;
 
 @Service
 public class UserServiceImp implements UserService {
@@ -44,5 +47,4 @@ public class UserServiceImp implements UserService {
         }
         return false;
     }
-
 }
