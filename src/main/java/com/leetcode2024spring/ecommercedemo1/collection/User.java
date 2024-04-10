@@ -13,8 +13,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
 
-    //    @Id
-//    private Long id;
     private String firebase_id;
     private String email;
     private String password;
