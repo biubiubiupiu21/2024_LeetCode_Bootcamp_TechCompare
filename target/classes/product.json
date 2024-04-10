@@ -1,7 +1,6 @@
-[{
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e3"
-  },
+[
+{
+  "product_string_id":"1",
   "product_name": "Alienware M15 R6 Gaming Laptop",
   "category": "Laptop",
   "brand": "Alienware",
@@ -15,23 +14,19 @@
     "battery": "86Wh",
     "os": "Windows 10 Home"
   },
-  "current_price": 2100,
-  "price_history": [
+  "current_price":{"$numberDouble": 2100.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
+      "time": {"$date": "2023-01-01T00:00:00Z"},
       "price": 1299.99
     },
     {
-      "time": {
-        "$date": "2023-03-01T00:00:00.000Z"
-      },
+      "time": {"$date": "2023-03-01T00:00:00Z"},
       "price": 1199.99
     }
   ],
   "review": [
-    {
+     {
       "comment": "Great!",
       "rating": 5,
       "time": {
@@ -46,14 +41,11 @@
         "$date": "2023-01-18T00:00:00.000Z"
       },
       "user_id": "6607b14c0a643e317ddb8f32"
-    }
-  ],
-  "productStringId": "1"
+    }]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e4"
-  },
+  "product_string_id":"2",
   "product_name": "Lenovo ThinkPad X1 Carbon Gen 9",
   "category": "Laptop",
   "brand": "Lenovo",
@@ -67,23 +59,19 @@
     "battery": "57Wh",
     "os": "Windows 10 Pro"
   },
-  "current_price": 1800,
-  "price_history": [
+  "current_price":{"$numberDouble":  1800.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-06-20T00:00:00.000Z"
-      },
-      "price": 1699.99
+      "time": {"$date": "2023-06-20T00:00:00Z"},
+      "price": {"$numberDouble":1699.99}
     },
     {
-      "time": {
-        "$date": "2023-05-01T00:00:00.000Z"
-      },
-      "price": 1500
+      "time": {"$date": "2023-05-01T00:00:00Z"},
+      "price": {"$numberDouble":1500.00}
     }
   ],
   "review": [
-    {
+     {
       "comment": "Nice computer",
       "rating": 4,
       "time": {
@@ -91,13 +79,11 @@
       },
       "user_id": "6607b14c0a643e317ddb8f32"
     }
-  ],
-  "productStringId": "2"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e5"
-  },
+  "product_string_id":"3",
   "product_name": "MSI Creator Z16",
   "category": "Laptop",
   "brand": "MSI",
@@ -111,27 +97,21 @@
     "battery": "90Wh",
     "os": "Windows 10 Pro"
   },
-  "current_price": 2500,
-  "price_history": [
+  "current_price":{"$numberDouble":  2500.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 2300
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":2300.00}
     },
     {
-      "time": {
-        "$date": "2023-04-01T00:00:00.000Z"
-      },
-      "price": 2677.99
+      "time": {"$date": "2023-04-01T00:00:00Z"},
+      "price": {"$numberDouble":2677.99}
     }
-  ],
-  "productStringId": "3"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e6"
-  },
+  "product_string_id":"4",
   "product_name": "Acer Aspire 5",
   "category": "Laptop",
   "brand": "Acer",
@@ -145,33 +125,25 @@
     "battery": "Up to 7.5 hours",
     "os": "Windows 10 in S Mode"
   },
-  "current_price": 400,
-  "price_history": [
+  "current_price":{"$numberDouble":  400.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 388
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 599.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 450
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
     }
-  ],
-  "productStringId": "4"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e7"
-  },
+  "product_string_id":"5",
   "product_name": "Dell XPS 13 2-in-1",
   "category": "Laptop",
   "brand": "Dell",
@@ -185,33 +157,25 @@
     "battery": "51Wh",
     "os": "Windows 10 Home"
   },
-  "current_price": 1500,
-  "price_history": [
+  "current_price":{"$numberDouble":  1500.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1700
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1700.00}
     },
     {
-      "time": {
-        "$date": "2023-08-01T00:00:00.000Z"
-      },
-      "price": 1600.99
+      "time": {"$date": "2023-08-01T00:00:00Z"},
+      "price": {"$numberDouble":1600.99}
     },
     {
-      "time": {
-        "$date": "2023-10-07T00:00:00.000Z"
-      },
-      "price": 1400
+      "time": {"$date": "2023-10-07T00:00:00Z"},
+      "price": {"$numberDouble":1400.00}
     }
-  ],
-  "productStringId": "5"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e8"
-  },
+  "product_string_id":"6",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -225,33 +189,25 @@
     "battery": "5000mAh",
     "os": "Android 12"
   },
-  "current_price": 1200,
-  "price_history": [
+  "current_price":{"$numberDouble":  1200.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1123
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1123.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1200.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1200.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1300
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
     }
-  ],
-  "productStringId": "6"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997e9"
-  },
+  "product_string_id":"7",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -265,33 +221,25 @@
     "battery": "5000mAh",
     "os": "Android 12"
   },
-  "current_price": 1300,
-  "price_history": [
+  "current_price":{"$numberDouble":  1300.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1800
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1800.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1355.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1355.99}
     },
     {
-      "time": {
-        "$date": "2023-05-18T00:00:00.000Z"
-      },
-      "price": 1478
+      "time": {"$date": "2023-05-18T00:00:00Z"},
+      "price": {"$numberDouble":1478.00}
     }
-  ],
-  "productStringId": "7"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ea"
-  },
+  "product_string_id":"8",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -305,33 +253,25 @@
     "battery": "5000mAh",
     "os": "Android 12"
   },
-  "current_price": 1400,
-  "price_history": [
+  "current_price":{"$numberDouble":  1400.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1765
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1765.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1300.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1300.99}
     },
     {
-      "time": {
-        "$date": "2023-08-07T00:00:00.000Z"
-      },
-      "price": 1677
+      "time": {"$date": "2023-08-07T00:00:00Z"},
+      "price": {"$numberDouble":1677.00}
     }
-  ],
-  "productStringId": "8"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997eb"
-  },
+  "product_string_id":"9",
   "product_name": "Samsung Galaxy S22 Ultra",
   "category": "Phone",
   "brand": "Samsung",
@@ -345,33 +285,25 @@
     "battery": "5000mAh",
     "os": "Android 12"
   },
-  "current_price": 1500,
-  "price_history": [
+  "current_price":{"$numberDouble":  1500.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1700
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1700.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1577.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1577.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1800
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1800.00}
     }
-  ],
-  "productStringId": "9"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ec"
-  },
+  "product_string_id":"10",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -385,33 +317,25 @@
     "battery": "6000mAh",
     "os": "Android 11"
   },
-  "current_price": 999,
-  "price_history": [
+  "current_price":{"$numberDouble":  999.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 899
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 455.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":455.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 677
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":677.00}
     }
-  ],
-  "productStringId": "10"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ed"
-  },
+  "product_string_id":"11",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -425,33 +349,25 @@
     "battery": "6000mAh",
     "os": "Android 11"
   },
-  "current_price": 1099,
-  "price_history": [
+  "current_price":{"$numberDouble":  1099.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 980
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":980.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1000
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 999
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":999.00}
     }
-  ],
-  "productStringId": "11"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ee"
-  },
+  "product_string_id":"12",
   "product_name": "ASUS ROG Phone 5",
   "category": "Phone",
   "brand": "ASUS",
@@ -465,33 +381,25 @@
     "battery": "6000mAh",
     "os": "Android 11"
   },
-  "current_price": 1299,
-  "price_history": [
+  "current_price":{"$numberDouble":  1299.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1499
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.00}
     },
     {
-      "time": {
-        "$date": "2023-09-01T00:00:00.000Z"
-      },
-      "price": 1599.99
+      "time": {"$date": "2023-09-01T00:00:00Z"},
+      "price": {"$numberDouble":1599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1300
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
     }
-  ],
-  "productStringId": "12"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ef"
-  },
+  "product_string_id":"13",
   "product_name": "Google Pixel 5a",
   "category": "Phone",
   "brand": "Google",
@@ -505,33 +413,25 @@
     "battery": "4680mAh",
     "os": "Android 11"
   },
-  "current_price": 449,
-  "price_history": [
+  "current_price":{"$numberDouble":  449.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 459
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":459.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 599.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 699
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":699.00}
     }
-  ],
-  "productStringId": "13"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f0"
-  },
+  "product_string_id":"14",
   "product_name": "Moto G Power (2021)",
   "category": "Phone",
   "brand": "Motorola",
@@ -545,33 +445,25 @@
     "battery": "5000mAh",
     "os": "Android 10"
   },
-  "current_price": 249,
-  "price_history": [
+  "current_price":{"$numberDouble":  249.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 388
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 400.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":400.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 678
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":678.00}
     }
-  ],
-  "productStringId": "14"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f1"
-  },
+  "product_string_id":"15",
   "product_name": "Moto G Power (2021)",
   "category": "Phone",
   "brand": "Motorola",
@@ -585,33 +477,25 @@
     "battery": "5000mAh",
     "os": "Android 10"
   },
-  "current_price": 449,
-  "price_history": [
+  "current_price":{"$numberDouble":  449.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 388
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 599.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 450
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
     }
-  ],
-  "productStringId": "15"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f2"
-  },
+  "product_string_id":"16",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -625,33 +509,25 @@
     "battery": "Up to 17 hours video playback",
     "os": "iOS 15"
   },
-  "current_price": 699,
-  "price_history": [
+  "current_price":{"$numberDouble":  699.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 388
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
     },
     {
-      "time": {
-        "$date": "2023-03-01T00:00:00.000Z"
-      },
-      "price": 599.99
+      "time": {"$date": "2023-03-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 700
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":700.00}
     }
-  ],
-  "productStringId": "16"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f3"
-  },
+  "product_string_id":"17",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -665,33 +541,25 @@
     "battery": "Up to 17 hours video playback",
     "os": "iOS 15"
   },
-  "current_price": 799,
-  "price_history": [
+  "current_price":{"$numberDouble":  799.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 899
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 999.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":999.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 899
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
     }
-  ],
-  "productStringId": "17"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f4"
-  },
+  "product_string_id":"18",
   "product_name": "iPhone 13 Mini",
   "category": "Phone",
   "brand": "Apple",
@@ -705,33 +573,25 @@
     "battery": "Up to 17 hours video playback",
     "os": "iOS 15"
   },
-  "current_price": 899,
-  "price_history": [
+  "current_price":{"$numberDouble":  899.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 799
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":799.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 999.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":999.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1000
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
     }
-  ],
-  "productStringId": "18"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f5"
-  },
+  "product_string_id":"19",
   "product_name": "Bose Noise Cancelling Headphones 700",
   "category": "Headphone",
   "brand": "Bose",
@@ -743,33 +603,25 @@
     "battery_life": "Up to 20 hours",
     "features": "Touch controls, Bose AR enabled"
   },
-  "current_price": 379,
-  "price_history": [
+  "current_price":{"$numberDouble":  379.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 388
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 599.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 450
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
     }
-  ],
-  "productStringId": "19"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f6"
-  },
+  "product_string_id":"20",
   "product_name": "Grado SR80e Prestige Series",
   "category": "Headphone",
   "brand": "Grado",
@@ -780,34 +632,25 @@
     "noise_cancellation": "No",
     "features": "Open back, Dynamic drivers"
   },
-  "current_price": 125,
-  "price_history": [
+  "current_price":{"$numberDouble":  125.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 100
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":100.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 200.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":200.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 355
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
     }
-  ],
-  "productStringId": "20"
+  ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f7"
-  },
-  "product_string_id": "21",
+  "product_string_id":"21",
   "product_name": "Jaybird Vista 2",
   "category": "Headphone",
   "brand": "Jaybird",
@@ -819,33 +662,25 @@
     "battery_life": "Up to 8 hours (24 hours with charging case)",
     "features": "Waterproof, Sport Fit"
   },
-  "current_price": 199,
-  "price_history": [
+  "current_price":{"$numberDouble":  199.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 100
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":100.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 200.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":200.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 355
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f8"
-  },
-  "product_string_id": "22",
+  "product_string_id":"22",
   "product_name": "JBL Tune 500BT",
   "category": "Headphone",
   "brand": "JBL",
@@ -857,33 +692,25 @@
     "battery_life": "Up to 16 hours",
     "features": "Foldable design, Hands-free calls"
   },
-  "current_price": 49.95,
-  "price_history": [
+  "current_price":{"$numberDouble":  49.95},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 59
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":59.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 70.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":70.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 60
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":60.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997f9"
-  },
-  "product_string_id": "23",
+  "product_string_id":"23",
   "product_name": "Sennheiser HD 660 S",
   "category": "Headphone",
   "brand": "Sennheiser",
@@ -894,33 +721,25 @@
     "noise_cancellation": "No",
     "features": "Open back, High fidelity sound, Low impedance"
   },
-  "current_price": 499.95,
-  "price_history": [
+  "current_price":{"$numberDouble":  499.95},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 501
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 619.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 355
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997fa"
-  },
-  "product_string_id": "24",
+  "product_string_id":"24",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -934,33 +753,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1099.95,
-  "price_history": [
+  "current_price":{"$numberDouble":  1099.95},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 2000
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":2000.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1230.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1230.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1234
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1234.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997fb"
-  },
-  "product_string_id": "25",
+  "product_string_id":"25",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -974,33 +785,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1199,
-  "price_history": [
+  "current_price":{"$numberDouble":  1199.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1300
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1499.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1099
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1099.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997fc"
-  },
-  "product_string_id": "26",
+  "product_string_id":"26",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1014,33 +817,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1299,
-  "price_history": [
+  "current_price":{"$numberDouble":  1299.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1399
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1499.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1599
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997fd"
-  },
-  "product_string_id": "27",
+  "product_string_id":"27",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1054,33 +849,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1299.95,
-  "price_history": [
+  "current_price":{"$numberDouble":  1299.95},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1599
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1499.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1399
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997fe"
-  },
-  "product_string_id": "28",
+  "product_string_id":"28",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1094,33 +881,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1499,
-  "price_history": [
+  "current_price":{"$numberDouble":  1499.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1799
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1799.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1699.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1699.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1599
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf7023997ff"
-  },
-  "product_string_id": "29",
+  "product_string_id":"29",
   "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1134,33 +913,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 1599,
-  "price_history": [
+  "current_price":{"$numberDouble":  1599.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 1499
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1399
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 1599
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf702399800"
-  },
-  "product_string_id": "30",
+  "product_string_id":"30",
   "product_name": "Samsung Galaxy Tab S7",
   "category": "Pad",
   "brand": "Samsung",
@@ -1174,33 +945,25 @@
     "battery": "8000mAh",
     "os": "Android"
   },
-  "current_price": 649,
-  "price_history": [
+  "current_price":{"$numberDouble":  649.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 749
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":749.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 669.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":669.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 569
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":569.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf702399801"
-  },
-  "product_string_id": "31",
+  "product_string_id":"31",
   "product_name": "Samsung Galaxy Tab S7",
   "category": "Pad",
   "brand": "Samsung",
@@ -1214,33 +977,25 @@
     "battery": "8000mAh",
     "os": "Android"
   },
-  "current_price": 849,
-  "price_history": [
+  "current_price":{"$numberDouble":  849.00},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 980
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":980.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 1000
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 988
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":988.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf702399802"
-  },
-  "product_string_id": "32",
+  "product_string_id":"32",
   "product_name": "iPad Mini (6th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1254,33 +1009,25 @@
     "battery": "Up to 10 hours of surfing the web on Wi‑Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 699.95,
-  "price_history": [
+  "current_price":{"$numberDouble":  699.95},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 501
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 619.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 700
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":700.00}
     }
   ]
 },
+
 {
-  "_id": {
-    "$oid": "6616c9124919ebf702399803"
-  },
-  "product_string_id": "33",
+  "product_string_id":"33",
   "product_name": "iPad Mini (6th Generation)",
   "category": "Pad",
   "brand": "Apple",
@@ -1294,520 +1041,46 @@
     "battery": "Up to 10 hours of surfing the web on Wi‑Fi or watching video",
     "os": "iPadOS"
   },
-  "current_price": 499,
-  "price_history": [
+  "current_price":{"$numberDouble":  499},
+  "price_history":[
     {
-      "time": {
-        "$date": "2023-01-01T00:00:00.000Z"
-      },
-      "price": 501
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
     },
     {
-      "time": {
-        "$date": "2023-02-01T00:00:00.000Z"
-      },
-      "price": 619.99
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
     },
     {
-      "time": {
-        "$date": "2023-05-07T00:00:00.000Z"
-      },
-      "price": 456
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":456.00}
     }
   ]
-},
-{
-  "_id": {
-    "$oid": "6616c938be40015da7f9d00b"
-  },
-  "product_string_id": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T17:15:36.387Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T17:15:36.387Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d7bada8f3045c9e8019d"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:17:30.331Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:17:30.331Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d80d5e1abb2c239ffaa3"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:18:53.001Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:18:53.001Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d86f7ddddc1b17b1e277"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:20:31.471Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:20:31.471Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d972239c6d3dedfe7671"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:24:50.868Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:24:50.868Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d9a260dde019aba9b817"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:25:37.974Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:25:37.974Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616d9e55e23a56a3cb85d0c"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:26:45.467Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:26:45.467Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616da1f3ecc8858f70a167d"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:27:43.441Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:27:43.441Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-},
-{
-  "_id": {
-    "$oid": "6616da53e1b26d2d0fa9caa1"
-  },
-  "productStringId": "109",
-  "product_name": "custom-id-laptop-109",
-  "current_price": 1100,
-  "category": "Laptop",
-  "brand": "Dell",
-  "model": "G15",
-  "specifications": {
-    "details": {
-      "os": "Android 11",
-      "display": "6.7-inch AMOLED (3200 x 1440) 120Hz",
-      "storage": "512GB SSD",
-      "graphics": "Adreno 660",
-      "battery": "4500mAh",
-      "processor": "Intel Core i7",
-      "ram": "16GB"
-    }
-  },
-  "price_history": [
-    {
-      "time": {
-        "$date": "2024-03-31T18:28:35.455Z"
-      },
-      "price": 1200
-    },
-    {
-      "time": {
-        "$date": "2024-04-10T18:28:35.456Z"
-      },
-      "price": 1100
-    }
-  ],
-  "review": [
-    {
-      "comment": "Great!",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-08T05:00:00.000Z"
-      },
-      "user_id": 34
-    },
-    {
-      "comment": "Will back again",
-      "rating": 5,
-      "time": {
-        "$date": "2023-01-11T05:00:00.000Z"
-      },
-      "user_id": 9
-    }
-  ],
-  "_class": "com.leetcode2024spring.ecommercedemo1.collection.Product"
-}]
+}
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

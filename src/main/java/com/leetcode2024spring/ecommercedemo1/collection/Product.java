@@ -7,45 +7,125 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Data
 @Builder
 
-@Document(collection = "Product")
+@Document(collection = "Products")
 public class Product {
     public static final String SEQUENCE_NAME = "product_sequence";
     //    @Id
     private String productStringId;
 
-    private String product_name;
-    private double current_price;
+    private String productName;
+    private double currentPrice;
     private String category;
     private String brand;
     private String model;
     private Specification specifications;
-    private Price_history[] price_history;
-    private Review[] review;
+//    private String image;
+    private List<PriceHistory> priceHistory;
+    private List<Review> review;
+
+    public Product(){
+        priceHistory = new ArrayList<PriceHistory>();
+        review = new ArrayList<>();
+    }
 
     public Product(String productStringId,
-                   String product_name,
-                   double current_price,
+                   String productName,
+                   double currentPrice,
                    String category,
                    String brand,
                    String model,
                    Specification specifications,
-                   Price_history[] price_history,
-                   Review[] review) {
+                   List<PriceHistory> priceHistory,
+                   List<Review> review) {
 
         this.productStringId = productStringId;
-        this.product_name = product_name;
-        this.current_price = current_price;
+        this.productName = productName;
+        this.currentPrice = currentPrice;
         this.category = category;
         this.brand = brand;
         this.model = model;
         this.specifications = specifications;
-        this.price_history = price_history;
+        this.priceHistory = priceHistory;
         this.review = review;
+    }
+
+    public String getProductStringId() {
+        return productStringId;
+    }
+
+    public void setProductStringId(String productStringId) {
+        this.productStringId = productStringId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setCurrentPrice(double currentPrice) {
+        this.currentPrice = currentPrice;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Specification getSpecifications() {
+        return specifications;
+    }
+
+    public void setSpecifications(Specification specifications) {
+        this.specifications = specifications;
+    }
+
+    public List<PriceHistory> getPriceHistory() {
+        return priceHistory;
+    }
+
+    public void setPriceHistory(List<PriceHistory> priceHistory) {
+        this.priceHistory = priceHistory;
+    }
+
+    public List<Review> getReview() {
+        return review;
+    }
+
+    public void setReview(Review review) {
+        this.review.add(review);
     }
 }
 

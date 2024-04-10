@@ -7,7 +7,7 @@ public class Review {
     private String comment;
     private int rating;
     private Date time;
-    private String email;
+    private int userId;
 
     public void setComment(String comment) {
         this.comment = comment;
@@ -21,14 +21,30 @@ public class Review {
         this.time = time;
     }
 
-    public void setUser_id(String email) {
-        this.email = email;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public Review(String comment, int rating, Date time, String email) {
+    public String getComment() {
+        return comment;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public Review(String comment, int rating, Date time, int userId) {
         this.comment = comment;
         this.rating = rating;
         this.time = time;
-        this.email = email;
+        this.userId = userId;
     }
 }
