@@ -4,17 +4,16 @@
     "email": "user123@example.com",
     "password": "qwertyui234567",
     "wishlist": [
-      {"product_id": "6607a4070a643e317ddb8ef1"},
-      {"product_id": "6607a4070a643e317ddb8ef0"}
+       "1",
+       "2"
     ]
   },
   {
     "firebase_id":"firebaseone",
     "email": "user456@example.com",
     "password": "2345tghjopl",
-    "wishlist": [
-      {"product_id": "6607a4070a643e317ddb8eeb"},
-      {"product_id": "6607a4070a643e317ddb8eec"}
+    "wishlist": ["4",
+       "3"
     ]
   },
   {
@@ -22,8 +21,8 @@
     "email": "user789@example.com",
     "password": "65esxcvhj",
     "wishlist": [
-      {"product_id": "6607a4070a643e317ddb8ef5"},
-      {"product_id": "6607a4070a643e317ddb8ef9"}
+      "5",
+      "6"
     ]
   }
   

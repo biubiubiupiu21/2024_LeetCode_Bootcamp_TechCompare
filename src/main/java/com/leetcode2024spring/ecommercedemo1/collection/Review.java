@@ -1,12 +1,13 @@
 package com.leetcode2024spring.ecommercedemo1.collection;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 public class Review {
     private String comment;
     private int rating;
-    private Timestamp time;
-    private int user_id;
+    private Date time;
+    private int userId;
 
     public void setComment(String comment) {
         this.comment = comment;
@@ -16,18 +17,34 @@ public class Review {
         this.rating = rating;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(Date time) {
         this.time = time;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public Review(String comment, int rating, Timestamp time, int user_id) {
+    public String getComment() {
+        return comment;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public Review(String comment, int rating, Date time, int userId) {
         this.comment = comment;
         this.rating = rating;
         this.time = time;
-        this.user_id = user_id;
+        this.userId = userId;
     }
 }
