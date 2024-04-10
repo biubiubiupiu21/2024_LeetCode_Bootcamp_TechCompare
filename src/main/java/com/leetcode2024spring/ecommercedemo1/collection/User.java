@@ -12,7 +12,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "User")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
-
     private String firebase_id;
     private String email;
     private String password;
