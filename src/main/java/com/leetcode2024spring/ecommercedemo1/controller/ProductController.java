@@ -2,13 +2,11 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
-import com.leetcode2024spring.ecommercedemo1.dto.ProductDTO;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/products")
@@ -28,6 +26,21 @@ public class ProductController {
         System.out.println(product.getProductName());
         System.out.println(product.getCategory());
         return product;
+    }
+
+    @GetMapping("/bycategory")
+    public List<Product> getProductsByCategory(@RequestParam("category") String category) {
+        return productService.getProductsByCategory(category);
+    }
+
+    @GetMapping("/bybrand")
+    public List<Product> getProductsByBrand(@RequestParam("brand") String brand) {
+        return productService.getProductsByBrand(brand);
+    }
+
+    @GetMapping("/search")
+    public List<Product> searchProductsByName(@RequestParam("name") String name) {
+        return productService.searchProductsByName(name);
     }
 
 

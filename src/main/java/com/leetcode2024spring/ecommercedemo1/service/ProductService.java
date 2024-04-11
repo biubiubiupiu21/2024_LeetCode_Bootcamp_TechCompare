@@ -7,6 +7,12 @@ import java.util.List;
 
 
 public interface ProductService {
+    List<Product> getProductsByCategory(String category);
+
+    List<Product> getProductsByBrand(String brand);
+
+    List<Product> searchProductsByName(String name);
+
     String compareProductsByPrice(Product product1, Product product2);
     String compareProductsByCategory(Product product1, Product product2);
 
