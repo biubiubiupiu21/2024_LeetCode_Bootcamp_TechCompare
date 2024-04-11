@@ -53,6 +53,20 @@ public class ProductController {
         return productService.getAllBrands();
     }
 
+    @GetMapping("/filterByPrice")
+    public List<Product> getProductsByPriceRange(
+            @RequestParam("minPrice") Double minPrice,
+            @RequestParam("maxPrice") Double maxPrice) {
+        return productService.getProductsByPriceRange(minPrice, maxPrice);
+    }
+
+    @GetMapping("/similar/{productId}")
+    public List<Product> getSimilarProducts(
+            @PathVariable String productId,
+            @RequestParam(required = false) String category) {
+        return productService.getOtherProductsInCategory(productId);
+    }
+
 
     @GetMapping("/compare")
     public String compareProducts(

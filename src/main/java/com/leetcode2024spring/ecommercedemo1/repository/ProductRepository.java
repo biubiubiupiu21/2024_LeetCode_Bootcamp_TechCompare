@@ -28,6 +28,16 @@ public interface ProductRepository extends MongoRepository<Product,String> {
     @Query(value = "{}", fields = "{brand : 1}")
     List<Product> findAllBrands();
 
+    //$gte stands for "greater than or equal to"
+    //$lte stands for "less than or equal to"
+    @Query("{'currentPrice' : { $gte: ?0, $lte: ?1 }}")
+    List<Product> findByPriceRange(Double minPrice, Double maxPrice);
+
+    //ne=not equal, ?1 = the second parameter
+    @Query("{'category': ?0, 'productStringId': {$ne: ?1}}")
+    List<Product> findByCategoryAndIdNot(String category, String excludeProductId);
+
+
     List<Review> findByReview(String productStringId);
 
 }
