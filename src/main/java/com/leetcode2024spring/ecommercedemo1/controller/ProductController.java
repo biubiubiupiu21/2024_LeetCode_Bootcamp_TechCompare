@@ -2,11 +2,13 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
+import com.leetcode2024spring.ecommercedemo1.dto.ProductDTO;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/products")
