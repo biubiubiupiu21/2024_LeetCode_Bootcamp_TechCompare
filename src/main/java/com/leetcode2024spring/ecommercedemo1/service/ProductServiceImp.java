@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 //import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductServiceImp {
@@ -75,6 +77,35 @@ public class ProductServiceImp {
         List<Product> products = productRepository.findByProductNameMatches(name);
 //        log.info("Found {} products", products.size());
         return productRepository.findByProductNameMatches(name);
+    }
+
+    public List<String> getAllCategories() {
+        return productRepository.findAllCategories().stream()
+                .map(Product::getCategory)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<String> getAllBrands() {
+        return productRepository.findAllBrands().stream()
+                .map(Product::getBrand)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<Product> getProductsByPriceRange(Double minPrice, Double maxPrice) {
+        return productRepository.findByPriceRange(minPrice, maxPrice);
+    }
+
+    public List<Product> getOtherProductsInCategory(String productId) {
+        // Use your custom method to find the product by its string ID
+        Product product = productRepository.findByProductStringId(productId);
+        if (product == null) {
+            throw new NoSuchElementException("Product not found with ID: " + productId);
+        }
+
+        // Now that you have the product and hence its category, fetch other products in the same category
+        return productRepository.findByCategoryAndIdNot(product.getCategory(), productId);
     }
 
     public String compareProductsByPrice(Product product1, Product product2) {
