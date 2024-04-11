@@ -19,6 +19,14 @@ public interface ProductRepository extends MongoRepository<Product,String> {
 
     List<Product> findByProductNameMatches(String regex);
 
+    //specifying a MongoDB query with two parts: value and fields.
+    //value = "{}" ---- select all in SQL
+    //{category : 1} specifies which fields to include or exclude in the documents. The number 1 is used to include the field, while a 0 would exclude it.
+    @Query(value = "{}", fields = "{category : 1}")
+    List<Product> findAllCategories();
+
+    @Query(value = "{}", fields = "{brand : 1}")
+    List<Product> findAllBrands();
 
     List<Review> findByReview(String productStringId);
 

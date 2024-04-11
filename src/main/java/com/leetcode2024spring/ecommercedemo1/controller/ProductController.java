@@ -43,6 +43,16 @@ public class ProductController {
         return productService.searchProductsByName(name);
     }
 
+    @GetMapping("/categories")
+    public List<String> getAllCategories() {
+        return productService.getAllCategories();
+    }
+
+    @GetMapping("/brands")
+    public List<String> getAllBrands() {
+        return productService.getAllBrands();
+    }
+
 
     @GetMapping("/compare")
     public String compareProducts(

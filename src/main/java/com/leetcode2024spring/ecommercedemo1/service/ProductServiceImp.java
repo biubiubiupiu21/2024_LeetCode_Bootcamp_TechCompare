@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductServiceImp {
@@ -75,6 +76,20 @@ public class ProductServiceImp {
         List<Product> products = productRepository.findByProductNameMatches(name);
 //        log.info("Found {} products", products.size());
         return productRepository.findByProductNameMatches(name);
+    }
+
+    public List<String> getAllCategories() {
+        return productRepository.findAllCategories().stream()
+                .map(Product::getCategory)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<String> getAllBrands() {
+        return productRepository.findAllBrands().stream()
+                .map(Product::getBrand)
+                .distinct()
+                .collect(Collectors.toList());
     }
 
     public String compareProductsByPrice(Product product1, Product product2) {
