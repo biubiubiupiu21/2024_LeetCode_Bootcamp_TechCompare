@@ -3,6 +3,8 @@ package com.leetcode2024spring.ecommercedemo1.service;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
 
+import java.util.List;
+
 
 public interface ProductService {
     String compareProductsByPrice(Product product1, Product product2);

@@ -17,20 +17,20 @@ public class ProductServiceImp {
     @Autowired
     private ProductRepository productRepository;
 
-    private SequenceGeneratorService sequenceGeneratorService;
+    //private SequenceGeneratorService sequenceGeneratorService;
 
     public ProductServiceImp(ProductRepository productRepository, SequenceGeneratorService sequenceGeneratorService) {
         this.productRepository = productRepository;
-        this.sequenceGeneratorService = sequenceGeneratorService;
+        //this.sequenceGeneratorService = sequenceGeneratorService;
     }
 
-    public Product createProduct(Product product) {
-        // Only set a new ID if the product doesn't already have one
-        if (product.getProductStringId() == null) {
-            product.setProductStringId(sequenceGeneratorService.generateSequence(Product.SEQUENCE_NAME).toString());
-        }
-        return productRepository.save(product);
-    }
+//    public Product createProduct(Product product) {
+//        // Only set a new ID if the product doesn't already have one
+//        if (product.getProductStringId() == null) {
+//            product.setProductStringId(sequenceGeneratorService.generateSequence(Product.SEQUENCE_NAME).toString());
+//        }
+//        return productRepository.save(product);
+//    }
 
     public List<Product> getAllProducts(){
         return productRepository.findAll();
