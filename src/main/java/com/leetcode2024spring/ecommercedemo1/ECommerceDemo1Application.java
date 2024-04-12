@@ -42,8 +42,10 @@ public class ECommerceDemo1Application {
 //            };
 
             List<Review> reviews = new ArrayList<>();
-            reviews.add(new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),34));
-            reviews.add(new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),9));
+            reviews.add(new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),"user123@example.com"));
+            reviews.add(new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),"user456@example.com"));
+
+
 //            Review[] reviews ={
 //                    new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),34),
 //                    new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),9)

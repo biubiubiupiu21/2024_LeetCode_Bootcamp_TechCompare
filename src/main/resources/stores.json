@@ -8,11 +8,11 @@
     "address": "100 Market St, San Francisco, CA 94103",
     "inventory": [
       {
-        "product_id": "6607a4070a643e317ddb8eeb",
+        "productStringId": 4,
         "quantity": 25
       },
       {
-        "product_id": "6607a4070a643e317ddb8eee",
+        "productStringId": 3,
         "quantity": 10
       }
     ]
@@ -27,11 +27,11 @@
     "address": "11 Times Square, New York, NY 10036",
     "inventory": [
       {
-        "product_id": "6607a4070a643e317ddb8ef1",
+        "productStringId": "5",
         "quantity": 15
       },
       {
-        "product_id": "6607a4070a643e317ddb8ef5",
+        "productStringId": "6",
         "quantity": 20
       }
     ]
@@ -46,11 +46,11 @@
     "address": "200 E Randolph St, Chicago, IL 60601",
     "inventory": [
       {
-        "product_id": "6607a4070a643e317ddb8efc",
+        "productStringId": "21",
         "quantity": 30
       },
       {
-        "product_id": "6607a4070a643e317ddb8efe",
+        "productStringId": "32",
         "quantity": 5
       }
     ]
