@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ import java.util.Map;
 
 @Document(collection = "Products")
 public class Product {
-    public static final String SEQUENCE_NAME = "product_sequence";
+    //public static final String SEQUENCE_NAME = "product_sequence";
     //    @Id
     private String productStringId;
 
@@ -25,15 +26,32 @@ public class Product {
     private String category;
     private String brand;
     private String model;
-    private Specification specifications;
+    private Map<String, String> specifications;
 //    private String image;
     private List<PriceHistory> priceHistory;
     private List<Review> review;
 
-    public Product(){
-        priceHistory = new ArrayList<PriceHistory>();
-        review = new ArrayList<>();
+    private static final Map<String, Map<String, String>> DEFAULT_SPECIFICATIONS = new HashMap<>();
+
+    static {
+        // Initialize default specifications for laptops
+       Map<String, String> laptopSpecs = new HashMap<>();
     }
+
+    // Product constructor
+    public Product() {
+        priceHistory = new ArrayList<>();
+        review = new ArrayList<>();
+        // Initialize specifications with empty map to avoid null pointers
+        specifications = new HashMap<>();
+    }
+
+    // Setter for category with specifications initialization
+    public void setCategory(String category) {
+        this.category = category;
+        this.specifications = new HashMap<>(DEFAULT_SPECIFICATIONS.getOrDefault(category, new HashMap<>()));
+    }
+
 
     public Product(String productStringId,
                    String productName,
@@ -41,7 +59,7 @@ public class Product {
                    String category,
                    String brand,
                    String model,
-                   Specification specifications,
+                   Map<String, String> specifications,
                    List<PriceHistory> priceHistory,
                    List<Review> review) {
 
@@ -84,9 +102,9 @@ public class Product {
         return category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
+//    public void setCategory(String category) {
+//        this.category = category;
+//    }
 
     public String getBrand() {
         return brand;
@@ -104,11 +122,11 @@ public class Product {
         this.model = model;
     }
 
-    public Specification getSpecifications() {
+    public Map<String, String> getSpecifications() {
         return specifications;
     }
 
-    public void setSpecifications(Specification specifications) {
+    public void setSpecifications(Map<String, String> specifications) {
         this.specifications = specifications;
     }
 
@@ -127,6 +145,8 @@ public class Product {
     public void setReview(Review review) {
         this.review.add(review);
     }
+
+
 }
 
 

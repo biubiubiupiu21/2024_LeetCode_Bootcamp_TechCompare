@@ -21,7 +21,9 @@ public class Review {
         this.time = time;
     }
 
-    public void setEmail(String email) {
+
+    public void setUserId(int userId) {
+
         this.email = email;
     }
 
