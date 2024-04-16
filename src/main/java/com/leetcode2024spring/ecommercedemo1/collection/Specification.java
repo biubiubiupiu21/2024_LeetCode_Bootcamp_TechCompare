@@ -9,7 +9,7 @@ public class Specification {
     }
 
     public Specification(Map<String, String> details) {
-        this.details = details;
+
     }
 
     public Map<String, String> getDetails() {
@@ -17,6 +17,5 @@ public class Specification {
     }
 
     public void setDetails(Map<String, String> details) {
-        this.details = details;
     }
 }

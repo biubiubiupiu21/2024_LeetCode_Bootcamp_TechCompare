@@ -4,35 +4,29 @@ package com.leetcode2024spring.ecommercedemo1.collection;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.security.KeyStore;
+import java.util.*;
+
 @Data
-@Builder
 @Document(collection = "User")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
+    private String password;
+    @Setter
+    @Getter
+    private List<String> wishlist;
     private String firebase_id;
     private String email;
 
-    public String[] getWishlist() {
-        return wishlist;
-    }
-
-    public void setWishlist(String[] wishlist) {
-        this.wishlist = wishlist;
-    }
-
-    private String password;
-    private String[] wishlist;
-
-    public User(String firebase_id, String email, String password, String[] wishlist) {
+    public User(String firebase_id, String email, String password, List<String> wishlist) {
         this.firebase_id = firebase_id;
         this.email = email;
         this.password = password;
         this.wishlist = wishlist;
     }
-
-
-
 }

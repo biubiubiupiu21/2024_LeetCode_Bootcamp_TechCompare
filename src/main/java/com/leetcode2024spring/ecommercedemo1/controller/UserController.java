@@ -40,12 +40,24 @@ public class UserController {
 
     @GetMapping("/getWishlist")
     public List<Product> getWishlist(String email){
-        String[] pIdList = userService.findByEmail(email).getWishlist();
+        List<String> pIdList = userService.findByEmail(email).getWishlist();
         List<Product> res = new LinkedList<>();
         for(String s : pIdList){
-            Product pro = productService.findProductById(s);
+            Product pro = productService.getByProductStringId(s);
             res.add(pro);
         }
         return res;
+    }
+
+    @PostMapping("/addProductToWishlist")
+    public ResponseEntity<Boolean> upsertWishlist(String email, String productStringId){
+        boolean addSuccess = userService.upsertWishlist(email, productStringId);
+        return ResponseEntity.ok(addSuccess);
+    }
+
+    @PostMapping("/deleteProductFromWishlist")
+    public ResponseEntity<Boolean> updateWishlist(String email, String productStringId){
+        boolean addSuccess = userService.updateWishlist(email, productStringId);
+        return ResponseEntity.ok(addSuccess);
     }
 }

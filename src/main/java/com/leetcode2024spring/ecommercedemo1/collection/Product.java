@@ -2,6 +2,7 @@ package com.leetcode2024spring.ecommercedemo1.collection;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@Getter
 @Data
 @Builder
 
@@ -26,7 +28,6 @@ public class Product {
     private String brand;
     private String model;
     private Specification specifications;
-//    private String image;
     private List<PriceHistory> priceHistory;
     private List<Review> review;
 
@@ -56,72 +57,36 @@ public class Product {
         this.review = review;
     }
 
-    public String getProductStringId() {
-        return productStringId;
-    }
-
     public void setProductStringId(String productStringId) {
         this.productStringId = productStringId;
-    }
-
-    public String getProductName() {
-        return productName;
     }
 
     public void setProductName(String productName) {
         this.productName = productName;
     }
 
-    public double getCurrentPrice() {
-        return currentPrice;
-    }
-
     public void setCurrentPrice(double currentPrice) {
         this.currentPrice = currentPrice;
-    }
-
-    public String getCategory() {
-        return category;
     }
 
     public void setCategory(String category) {
         this.category = category;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
     public void setBrand(String brand) {
         this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public void setModel(String model) {
         this.model = model;
     }
 
-    public Specification getSpecifications() {
-        return specifications;
-    }
-
     public void setSpecifications(Specification specifications) {
         this.specifications = specifications;
     }
 
-    public List<PriceHistory> getPriceHistory() {
-        return priceHistory;
-    }
-
     public void setPriceHistory(List<PriceHistory> priceHistory) {
         this.priceHistory = priceHistory;
-    }
-
-    public List<Review> getReview() {
-        return review;
     }
 
     public void setReview(Review review) {

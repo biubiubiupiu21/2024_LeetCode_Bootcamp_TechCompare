@@ -35,14 +35,11 @@ public class ProductServiceImp {
 
     public Product getByProductStringId(String id) {
         Product product = (productRepository.findByProductStringId(id));
-        System.out.println(12345);
-        System.out.println(product.getProductName());
-        System.out.println(product.getCategory());
-        List<Product> products = productRepository.findAll();
-        for (Product p:products){
-            System.out.println(p.getCategory());
-        }
-
+//        System.out.println(product.getCategory());
+//        List<Product> products = productRepository.findAll();
+//        for (Product p:products){
+//            System.out.println(p.getCategory());
+//        }
         return product; // Return null if product is not found
     }
 
