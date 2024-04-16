@@ -1,21 +1,37 @@
 package com.leetcode2024spring.ecommercedemo1.collection;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-class Location{
-    private double longitude;
-    private double latitude;
-}
+import java.util.ArrayList;
+import java.util.List;
 
-class Inventory{
-    private int product_id;
-    private int quantity;
-}
+@Data
+@Builder
+@Getter
+@Setter
+
+@Document(collection = "Store")
 public class Store {
-    @Id
-    private int id;
     private String name;
     private Location location;
     private String address;
-    private Inventory[] inventory;
+    private List<Inventory> inventory;
+
+    public Store(){
+        inventory = new ArrayList<>();
+    }
+
+    public Store(String name, Location location, String address, List<Inventory> inventory){
+        this.name = name;
+        this.location = location;
+        this.address = address;
+        this.inventory = inventory;
+    }
 }
+
+

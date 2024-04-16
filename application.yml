@@ -1,6 +1,5 @@
 spring:
   data:
     mongodb:
-#      change username, pwd and database name
-      #uri: mongodb://eric:szy123456@localhost:27017/admin
       uri: mongodb://tcAdmin:123456@localhost:27017/techCompare
+#       uri: mongodb+srv://techCompare:TFkMwBs3wRhWPU1a@cluster0.oooglym.mongodb.net/techCompare

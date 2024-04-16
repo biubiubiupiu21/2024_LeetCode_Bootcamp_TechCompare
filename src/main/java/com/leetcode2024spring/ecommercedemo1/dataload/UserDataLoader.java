@@ -5,6 +5,10 @@ import com.leetcode2024spring.ecommercedemo1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import java.util.*;
+import java.util.ArrayList;
+
+import java.util.List;
 
 @Component
 public class UserDataLoader implements CommandLineRunner {
@@ -13,16 +17,25 @@ public class UserDataLoader implements CommandLineRunner {
     private UserService userService;
 
     private void loadUserData() {
+        List<String> u1 = new ArrayList<>();
+        List<String> u2 = new ArrayList<>();
+        List<String> u3 = new ArrayList<>();
+        u1.add("2");
+        u1.add("7");
+        u2.add("19");
+        u2.add("13");
+        u3.add("1");
+        u3.add("5");
         User user1 = new User("firebaseone", "user123@example.com", "qwertyui234567",
-                new String[]{"6607a4070a643e317ddb8ef1","6607a4070a643e317ddb8ef0"});
+                u1);
         userService.save(user1);
 
         User user2 = new User("firebaseone", "user456@example.com", "2345tghjopl",
-                new String[]{"6607a4070a643e317ddb8eeb", "6607a4070a643e317ddb8eec"});
+                u2);
         userService.save(user2);
 
         User user3 = new User("firebaseone", "user789@example.com", "65esxcvhj",
-                new String[]{"6607a4070a643e317ddb8ef5", "6607a4070a643e317ddb8ef9"});
+               u3);
         userService.save(user3);
 
         System.out.println("Loaded users...");
