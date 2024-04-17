@@ -7,11 +7,16 @@ import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 
+import java.util.LinkedList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/products")
 @AllArgsConstructor
 public class ProductController {
@@ -95,34 +100,46 @@ public class ProductController {
 
 
 
-    @GetMapping("/compare")
-    public String compareProducts(
+    @PostMapping("/compare")
+    public List<Product> compareProducts(
             @RequestParam("productId1") String productId1,
             @RequestParam("productId2") String productId2
     ) {
+        List<Product> ans = new LinkedList<Product>();
         // Retrieve products from repository based on product IDs
-        Product product1 = productService.getById(productId1);
-        Product product2 = productService.getById(productId2);
+        Product product1 = productService.getByProductStringId(productId1);
+        Product product2 = productService.getByProductStringId(productId2);
 
         if (product1 != null && product2 != null) {
             // Perform comparison based on price
-            String priceComparison = productService.compareProductsByPrice(product1, product2);
-            // Perform comparison based on category
-            String categoryComparison = productService.compareProductsByCategory(product1, product2);
-
+//            String priceComparison = productService.compareProductsByPrice(product1, product2);
+//            // Perform comparison based on category
+//            String categoryComparison = productService.compareProductsByCategory(product1, product2);
+                ans.add(product1);
+                ans.add(product2);
             // You can return both comparisons or choose to return one
-            return priceComparison + "<br>" + categoryComparison;
+            return ans;
         } else {
-            return "One or both products not found.";
+            return ans;
         }
     }
     @PostMapping("/sendreview")
-    public String sendReview(String id, Review review){
+    public String sendReview(@RequestParam("id")String id, @RequestBody Review review){
         return productService.sendReview(id,review);
     }
-    @PostMapping("/getreview")
-    public List<Review> getReview(String id){
+    @GetMapping("/getreview")
+    public List<Review> getReview(@RequestParam("productStringId")String id){
         return productService.getReviewById(id);
+    }
+
+    @GetMapping("/getest")
+    public Product getest(){
+        return productService.gettest();
+    }
+
+    @GetMapping("/getest2")
+    public void getest2(){
+        productService.printAllProducts();
     }
 }
 

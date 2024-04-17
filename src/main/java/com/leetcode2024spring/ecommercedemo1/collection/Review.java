@@ -22,6 +22,7 @@ public class Review {
     }
 
     public void setEmail(String email) {
+
         this.email = email;
     }
 

@@ -45,6 +45,18 @@ public class UserServiceImp implements UserService {
 
     @Override
     public ResponseEntity<User> registerUser(@RequestBody User user) {
+        String email = user.getEmail();
+        List<User> lst = userRepository.findAll();
+        boolean flag = true;
+        for (User each: lst){
+            if (each.getEmail().equals(email)){
+                flag = false;
+                break;
+            }
+        }
+        if (flag==false){
+            return ResponseEntity.badRequest().build();
+        }
         User registeredUser = userRepository.save(user);
         return ResponseEntity.ok(registeredUser);
     }
@@ -99,5 +111,6 @@ public class UserServiceImp implements UserService {
         mongoTemplate.updateFirst(query, update, User.class);
         return true;
     }
+
 
 }
