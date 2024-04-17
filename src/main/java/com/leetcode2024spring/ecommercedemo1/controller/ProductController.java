@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
 
+import java.util.LinkedList;
 import java.util.List;
 
 @RestController
@@ -96,24 +97,26 @@ public class ProductController {
 
 
     @PostMapping("/compare")
-    public String compareProducts(
+    public List<Product> compareProducts(
             @RequestParam("productId1") String productId1,
             @RequestParam("productId2") String productId2
     ) {
+        List<Product> ans = new LinkedList<Product>();
         // Retrieve products from repository based on product IDs
         Product product1 = productService.getByProductStringId(productId1);
         Product product2 = productService.getByProductStringId(productId2);
 
         if (product1 != null && product2 != null) {
             // Perform comparison based on price
-            String priceComparison = productService.compareProductsByPrice(product1, product2);
-            // Perform comparison based on category
-            String categoryComparison = productService.compareProductsByCategory(product1, product2);
-
+//            String priceComparison = productService.compareProductsByPrice(product1, product2);
+//            // Perform comparison based on category
+//            String categoryComparison = productService.compareProductsByCategory(product1, product2);
+                ans.add(product1);
+                ans.add(product2);
             // You can return both comparisons or choose to return one
-            return priceComparison + "<br>" + categoryComparison;
+            return ans;
         } else {
-            return "One or both products not found.";
+            return ans;
         }
     }
     @PostMapping("/sendreview")

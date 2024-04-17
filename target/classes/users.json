@@ -1,59 +1,3 @@
-<<<<<<< HEAD
-[
-  {
-    "firebaseId":"firebaseone",
-    "email": "user123@example.com",
-    "password": "qwertyui234567",
-    "wishlist": [
-       "1",
-       "2"
-    ]
-  },
-  {
-    "firebaseId":"firebasetwo",
-    "email": "user456@example.com",
-    "password": "2345tghjopl",
-    "wishlist": ["4",
-       "3"
-    ]
-  },
-  {
-    "firebaseId":"firebasethree",
-    "email": "user789@example.com",
-    "password": "65esxcvhj",
-    "wishlist": [
-      "5",
-      "6"
-    ]
-  }
-  
-]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 [
   {
     "firebase_id":"firebaseone",
@@ -107,5 +51,3 @@
 
 
 
-
->>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733

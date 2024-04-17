@@ -18,7 +18,7 @@ public class ECommerceDemo1Application {
         SpringApplication.run(ECommerceDemo1Application.class, args);
     }
 
-//<<<<<<< HEAD
+
 //    @Bean
 //    CommandLineRunner runner(ProductRepository repository){
 //        return args -> {

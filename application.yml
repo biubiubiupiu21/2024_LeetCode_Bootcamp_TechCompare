@@ -1,11 +1,11 @@
 spring:
   data:
     mongodb:
-<<<<<<< HEAD
-#      change username, pwd and database name
-      uri: mongodb://eric:szy11408@localhost:27017/admin
 #      uri: mongodb://tcAdmin:123456@localhost:27017/techCompare
-=======
-      uri: mongodb://tcAdmin:123456@localhost:27017/techCompare
+      uri: mongodb://eric:szy11408@localhost:27017/admin
 #       uri: mongodb+srv://techCompare:TFkMwBs3wRhWPU1a@cluster0.oooglym.mongodb.net/techCompare
->>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
+
+jwt:
+  secret: "lRd5$0&@k29HsP1!sXu#WqZo*m"
+  expiration: 3600
+

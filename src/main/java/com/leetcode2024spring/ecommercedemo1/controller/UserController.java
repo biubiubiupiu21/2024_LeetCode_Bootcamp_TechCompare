@@ -5,10 +5,16 @@ import com.leetcode2024spring.ecommercedemo1.collection.User;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.UserService;
 import com.leetcode2024spring.ecommercedemo1.service.UserServiceImp;
+import com.leetcode2024spring.ecommercedemo1.util.JwtTokenUtil;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,10 +39,25 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Boolean> login(@RequestBody User user) {
+    public ResponseEntity<String> login(@RequestBody User user) {
         boolean loginSuccess = userService.loginUser(user.getEmail(), user.getPassword());
-        return ResponseEntity.ok(loginSuccess);
+        if (loginSuccess) {
+            JwtTokenUtil jwt = new JwtTokenUtil();
+            String token = jwt.generateToken(user.getEmail());
+
+            // 将 Token 放在响应头部中返回给客户端
+            HttpHeaders headers = new HttpHeaders();
+            headers.add("Authorization", "Bearer " + token);
+
+            return ResponseEntity.ok()
+                    .headers(headers)
+                    .body("Login successful");
+        } else {
+            return ResponseEntity.badRequest().body("Login failed");
+        }
     }
+
+
 
     @GetMapping("/getWishlist")
     public List<Product> getWishlist(String email){
@@ -49,6 +70,8 @@ public class UserController {
         return res;
     }
 
+
+
     @PostMapping("/addProductToWishlist")
     public ResponseEntity<Boolean> upsertWishlist(String email, String productStringId){
         boolean addSuccess = userService.upsertWishlist(email, productStringId);
@@ -59,5 +82,10 @@ public class UserController {
     public ResponseEntity<Boolean> updateWishlist(String email, String productStringId){
         boolean addSuccess = userService.updateWishlist(email, productStringId);
         return ResponseEntity.ok(addSuccess);
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home.html"; // 返回html文件的名称，Spring Boot会自动查找位于resources/static或resources/templates目录下的HTML文件
     }
 }

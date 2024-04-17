@@ -37,7 +37,7 @@ public class ProductServiceImp {
 
     //private SequenceGeneratorService sequenceGeneratorService;
 
-    public ProductServiceImp(ProductRepository productRepository, SequenceGeneratorService sequenceGeneratorService) {
+    public ProductServiceImp(ProductRepository productRepository) {
         this.productRepository = productRepository;
         //this.sequenceGeneratorService = sequenceGeneratorService;
     }
