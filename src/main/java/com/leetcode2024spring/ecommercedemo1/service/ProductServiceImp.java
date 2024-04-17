@@ -81,10 +81,8 @@ public class ProductServiceImp {
 
 
     public List<Product> searchProductsByName(String name) {
-//        log.info("Searching for products with name containing: {}", name);
-        List<Product> products = productRepository.findByProductNameMatches(name);
-//        log.info("Found {} products", products.size());
-        return productRepository.findByProductNameMatches(name);
+        String regex = ".*" + name + ".*";
+        return productRepository.findByProductNameMatches(regex);
     }
 
     public List<String> getAllCategories() {
