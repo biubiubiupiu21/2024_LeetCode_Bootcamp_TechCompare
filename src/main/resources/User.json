@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6616c3544919ebf7023997db"
+  },
+  "firebase_id": "firebaseone",
+  "email": "user123@example.com",
+  "password": "qwertyui234567",
+  "wishlist": ["2","5"]
+},
+{
+  "_id": {
+    "$oid": "6616c3544919ebf7023997dc"
+  },
+  "firebase_id": "firebaseone",
+  "email": "user456@example.com",
+  "password": "2345tghjopl",
+  "wishlist": ["4", "6"]
+},
+{
+  "_id": {
+    "$oid": "6616c3544919ebf7023997dd"
+  },
+  "firebase_id": "firebaseone",
+  "email": "user789@example.com",
+  "password": "65esxcvhj",
+  "wishlist": ["19", "14"]
+},
+{
+  "_id": {
+    "$oid": "6616c58b5a4f17240c4910df"
+  },
+  "firebase_id": "firebasethree",
+  "email": "jingai524@gmail.com",
+  "password": "12345678",
+  "wishlist": [],
+  "_class": "com.leetcode2024spring.ecommercedemo1.collection.User"
+}]

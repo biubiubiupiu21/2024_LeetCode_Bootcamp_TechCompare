@@ -1,5 +1,6 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
+import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
 import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
@@ -118,6 +119,21 @@ public class ProductServiceImp {
 
         // Now that you have the product and hence its category, fetch other products in the same category
         return productRepository.findByCategoryAndIdNot(product.getCategory(), productId);
+    }
+
+    public List<Review> getReviewsByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getReview() : null;
+    }
+
+    public Double getPriceByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getCurrentPrice() : null;
+    }
+
+    public List<PriceHistory> getPriceHistoryByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getPriceHistory() : null;
     }
 
     public String compareProductsByPrice(Product product1, Product product2) {

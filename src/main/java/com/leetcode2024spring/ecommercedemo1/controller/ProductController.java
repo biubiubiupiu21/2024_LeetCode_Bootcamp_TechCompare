@@ -1,10 +1,13 @@
 package com.leetcode2024spring.ecommercedemo1.controller;
 
+import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+
 
 import java.util.List;
 
@@ -66,6 +69,30 @@ public class ProductController {
             @RequestParam(required = false) String category) {
         return productService.getOtherProductsInCategory(productId);
     }
+
+    @GetMapping("/{productId}/reviews")
+    public List<Review> getReviewsByProductId(@PathVariable String productId) {
+        return productService.getReviewsByProductId(productId);
+    }
+
+    @GetMapping("/{productStringId}/price")
+    public ResponseEntity<Double> getProductPrice(@PathVariable String productStringId) {
+        Double price = productService.getPriceByProductId(productStringId);
+        if (price == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(price);
+    }
+
+    @GetMapping("/{productStringId}/price-history")
+    public ResponseEntity<List<PriceHistory>> getPriceHistoryByProductId(@PathVariable String productStringId) {
+        List<PriceHistory> priceHistory = productService.getPriceHistoryByProductId(productStringId);
+        if (priceHistory == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(priceHistory);
+    }
+
 
 
     @PostMapping("/compare")

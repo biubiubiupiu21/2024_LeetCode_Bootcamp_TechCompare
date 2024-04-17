@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
     {
         "productStringId": "1",
         "productName": "Alienware M15 R6 Gaming Laptop",
@@ -1473,3 +1474,1090 @@
         ]
     }
 ]
+=======
+{
+  "product_string_id":"1",
+  "product_name": "Alienware M15 R6 Gaming Laptop",
+  "category": "Laptop",
+  "brand": "Alienware",
+  "model": "M15 R6",
+  "specifications": {
+    "processor": "Intel Core i7-11800H",
+    "ram": "16GB DDR4",
+    "storage": "1TB SSD",
+    "display": "15.6-inch FHD (1920 x 1080) 165Hz",
+    "graphics": "NVIDIA GeForce RTX 3070",
+    "battery": "86Wh",
+    "os": "Windows 10 Home"
+  },
+  "current_price":{"$numberDouble": 2100.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": 1299.99
+    },
+    {
+      "time": {"$date": "2023-03-01T00:00:00Z"},
+      "price": 1199.99
+    }
+  ],
+  "review": [
+     {
+      "comment": "Great!",
+      "rating": 5,
+      "time": {
+        "$date": "2023-01-08T00:00:00.000Z"
+      },
+      "user_id": "6607b14c0a643e317ddb8f32"
+    },
+    {
+      "comment": "soso",
+      "rating": 3,
+      "time": {
+        "$date": "2023-01-18T00:00:00.000Z"
+      },
+      "user_id": "6607b14c0a643e317ddb8f32"
+    }]
+},
+
+{
+  "product_string_id":"2",
+  "product_name": "Lenovo ThinkPad X1 Carbon Gen 9",
+  "category": "Laptop",
+  "brand": "Lenovo",
+  "model": "ThinkPad X1 Carbon Gen 9",
+  "specifications": {
+    "processor": "Intel Core i7-1165G7",
+    "ram": "16GB LPDDR4x",
+    "storage": "512GB SSD",
+    "display": "14-inch FHD+ (1920 x 1200)",
+    "graphics": "Integrated Intel Iris Xe Graphics",
+    "battery": "57Wh",
+    "os": "Windows 10 Pro"
+  },
+  "current_price":{"$numberDouble":  1800.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-06-20T00:00:00Z"},
+      "price": {"$numberDouble":1699.99}
+    },
+    {
+      "time": {"$date": "2023-05-01T00:00:00Z"},
+      "price": {"$numberDouble":1500.00}
+    }
+  ],
+  "review": [
+     {
+      "comment": "Nice computer",
+      "rating": 4,
+      "time": {
+        "$date": "2023-01-08T00:00:00.000Z"
+      },
+      "user_id": "6607b14c0a643e317ddb8f32"
+    }
+  ]
+},
+
+{
+  "product_string_id":"3",
+  "product_name": "MSI Creator Z16",
+  "category": "Laptop",
+  "brand": "MSI",
+  "model": "Creator Z16",
+  "specifications": {
+    "processor": "Intel Core i9-11900H",
+    "ram": "32GB DDR4",
+    "storage": "1TB NVMe SSD",
+    "display": "16-inch QHD+ (2560 x 1600) Touch Screen",
+    "graphics": "NVIDIA GeForce RTX 3060",
+    "battery": "90Wh",
+    "os": "Windows 10 Pro"
+  },
+  "current_price":{"$numberDouble":  2500.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":2300.00}
+    },
+    {
+      "time": {"$date": "2023-04-01T00:00:00Z"},
+      "price": {"$numberDouble":2677.99}
+    }
+  ]
+},
+
+{
+  "product_string_id":"4",
+  "product_name": "Acer Aspire 5",
+  "category": "Laptop",
+  "brand": "Acer",
+  "model": "Aspire 5",
+  "specifications": {
+    "processor": "AMD Ryzen 3 3200U",
+    "ram": "4GB DDR4",
+    "storage": "128GB SSD",
+    "display": "15.6-inch FHD (1920 x 1080)",
+    "graphics": "Integrated AMD Radeon Vega 3 Graphics",
+    "battery": "Up to 7.5 hours",
+    "os": "Windows 10 in S Mode"
+  },
+  "current_price":{"$numberDouble":  400.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"5",
+  "product_name": "Dell XPS 13 2-in-1",
+  "category": "Laptop",
+  "brand": "Dell",
+  "model": "XPS 13 2-in-1",
+  "specifications": {
+    "processor": "Intel Core i7-1065G7",
+    "ram": "16GB DDR4",
+    "storage": "512GB SSD",
+    "display": "13.4-inch FHD+ (1920 x 1200) Touch Display",
+    "graphics": "Integrated Intel Iris Plus Graphics",
+    "battery": "51Wh",
+    "os": "Windows 10 Home"
+  },
+  "current_price":{"$numberDouble":  1500.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1700.00}
+    },
+    {
+      "time": {"$date": "2023-08-01T00:00:00Z"},
+      "price": {"$numberDouble":1600.99}
+    },
+    {
+      "time": {"$date": "2023-10-07T00:00:00Z"},
+      "price": {"$numberDouble":1400.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"6",
+  "product_name": "Samsung Galaxy S22 Ultra",
+  "category": "Phone",
+  "brand": "Samsung",
+  "model": "Galaxy S22 Ultra",
+  "specifications": {
+    "display": "6.8-inch Edge QHD+ Dynamic AMOLED 2X",
+    "processor": "Snapdragon 8 Gen 1",
+    "storage": "128GB",
+    "ram": "8GB",
+    "camera": "108MP wide + 12MP ultrawide + 10MP telephoto (3x) + 10MP telephoto (10x)",
+    "battery": "5000mAh",
+    "os": "Android 12"
+  },
+  "current_price":{"$numberDouble":  1200.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1123.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1200.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"7",
+  "product_name": "Samsung Galaxy S22 Ultra",
+  "category": "Phone",
+  "brand": "Samsung",
+  "model": "Galaxy S22 Ultra",
+  "specifications": {
+    "display": "6.8-inch Edge QHD+ Dynamic AMOLED 2X",
+    "processor": "Snapdragon 8 Gen 1",
+    "storage": "256GB",
+    "ram": "8GB",
+    "camera": "108MP wide + 12MP ultrawide + 10MP telephoto (3x) + 10MP telephoto (10x)",
+    "battery": "5000mAh",
+    "os": "Android 12"
+  },
+  "current_price":{"$numberDouble":  1300.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1800.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1355.99}
+    },
+    {
+      "time": {"$date": "2023-05-18T00:00:00Z"},
+      "price": {"$numberDouble":1478.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"8",
+  "product_name": "Samsung Galaxy S22 Ultra",
+  "category": "Phone",
+  "brand": "Samsung",
+  "model": "Galaxy S22 Ultra",
+  "specifications": {
+    "display": "6.8-inch Edge QHD+ Dynamic AMOLED 2X",
+    "processor": "Snapdragon 8 Gen 1",
+    "storage": "512GB",
+    "ram": "12GB",
+    "camera": "108MP wide + 12MP ultrawide + 10MP telephoto (3x) + 10MP telephoto (10x)",
+    "battery": "5000mAh",
+    "os": "Android 12"
+  },
+  "current_price":{"$numberDouble":  1400.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1765.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1300.99}
+    },
+    {
+      "time": {"$date": "2023-08-07T00:00:00Z"},
+      "price": {"$numberDouble":1677.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"9",
+  "product_name": "Samsung Galaxy S22 Ultra",
+  "category": "Phone",
+  "brand": "Samsung",
+  "model": "Galaxy S22 Ultra",
+  "specifications": {
+    "display": "6.8-inch Edge QHD+ Dynamic AMOLED 2X",
+    "processor": "Snapdragon 8 Gen 1",
+    "storage": "1TB",
+    "ram": "12GB",
+    "camera": "108MP wide + 12MP ultrawide + 10MP telephoto (3x) + 10MP telephoto (10x)",
+    "battery": "5000mAh",
+    "os": "Android 12"
+  },
+  "current_price":{"$numberDouble":  1500.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1700.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1577.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1800.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"10",
+  "product_name": "ASUS ROG Phone 5",
+  "category": "Phone",
+  "brand": "ASUS",
+  "model": "ROG Phone 5",
+  "specifications": {
+    "display": "6.78-inch FHD+ AMOLED, 144Hz",
+    "processor": "Snapdragon 888",
+    "storage": "128GB",
+    "ram": "8GB",
+    "camera": "64MP wide + 13MP ultrawide + 5MP macro",
+    "battery": "6000mAh",
+    "os": "Android 11"
+  },
+  "current_price":{"$numberDouble":  999.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":455.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":677.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"11",
+  "product_name": "ASUS ROG Phone 5",
+  "category": "Phone",
+  "brand": "ASUS",
+  "model": "ROG Phone 5",
+  "specifications": {
+    "display": "6.78-inch FHD+ AMOLED, 144Hz",
+    "processor": "Snapdragon 888",
+    "storage": "128GB",
+    "ram": "16GB",
+    "camera": "64MP wide + 13MP ultrawide + 5MP macro",
+    "battery": "6000mAh",
+    "os": "Android 11"
+  },
+  "current_price":{"$numberDouble":  1099.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":980.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":999.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"12",
+  "product_name": "ASUS ROG Phone 5",
+  "category": "Phone",
+  "brand": "ASUS",
+  "model": "ROG Phone 5",
+  "specifications": {
+    "display": "6.78-inch FHD+ AMOLED, 144Hz",
+    "processor": "Snapdragon 888",
+    "storage": "256GB",
+    "ram": "16GB",
+    "camera": "64MP wide + 13MP ultrawide + 5MP macro",
+    "battery": "6000mAh",
+    "os": "Android 11"
+  },
+  "current_price":{"$numberDouble":  1299.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.00}
+    },
+    {
+      "time": {"$date": "2023-09-01T00:00:00Z"},
+      "price": {"$numberDouble":1599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"13",
+  "product_name": "Google Pixel 5a",
+  "category": "Phone",
+  "brand": "Google",
+  "model": "Pixel 5a",
+  "specifications": {
+    "display": "6.34-inch OLED, FHD+",
+    "processor": "Snapdragon 765G",
+    "storage": "128GB",
+    "ram": "6GB",
+    "camera": "12.2MP wide + 16MP ultrawide",
+    "battery": "4680mAh",
+    "os": "Android 11"
+  },
+  "current_price":{"$numberDouble":  449.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":459.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":699.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"14",
+  "product_name": "Moto G Power (2021)",
+  "category": "Phone",
+  "brand": "Motorola",
+  "model": "G Power",
+  "specifications": {
+    "display": "6.6-inch LCD, HD+",
+    "processor": "Snapdragon 662",
+    "storage": "32GB",
+    "ram": "3GB",
+    "camera": "48MP wide + 2MP macro + 2MP depth",
+    "battery": "5000mAh",
+    "os": "Android 10"
+  },
+  "current_price":{"$numberDouble":  249.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":400.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":678.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"15",
+  "product_name": "Moto G Power (2021)",
+  "category": "Phone",
+  "brand": "Motorola",
+  "model": "G Power",
+  "specifications": {
+    "display": "6.6-inch LCD, HD+",
+    "processor": "Snapdragon 662",
+    "storage": "64GB",
+    "ram": "4GB",
+    "camera": "48MP wide + 2MP macro + 2MP depth",
+    "battery": "5000mAh",
+    "os": "Android 10"
+  },
+  "current_price":{"$numberDouble":  449.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"16",
+  "product_name": "iPhone 13 Mini",
+  "category": "Phone",
+  "brand": "Apple",
+  "model": "iPhone 13 Mini",
+  "specifications": {
+    "display": "5.4-inch Super Retina XDR OLED",
+    "processor": "A15 Bionic",
+    "storage": "128GB",
+    "ram": "4GB",
+    "camera": "12MP wide + 12MP ultrawide",
+    "battery": "Up to 17 hours video playback",
+    "os": "iOS 15"
+  },
+  "current_price":{"$numberDouble":  699.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
+    },
+    {
+      "time": {"$date": "2023-03-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":700.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"17",
+  "product_name": "iPhone 13 Mini",
+  "category": "Phone",
+  "brand": "Apple",
+  "model": "iPhone 13 Mini",
+  "specifications": {
+    "display": "5.4-inch Super Retina XDR OLED",
+    "processor": "A15 Bionic",
+    "storage": "256GB",
+    "ram": "4GB",
+    "camera": "12MP wide + 12MP ultrawide",
+    "battery": "Up to 17 hours video playback",
+    "os": "iOS 15"
+  },
+  "current_price":{"$numberDouble":  799.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":999.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":899.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"18",
+  "product_name": "iPhone 13 Mini",
+  "category": "Phone",
+  "brand": "Apple",
+  "model": "iPhone 13 Mini",
+  "specifications": {
+    "display": "5.4-inch Super Retina XDR OLED",
+    "processor": "A15 Bionic",
+    "storage": "512GB",
+    "ram": "4GB",
+    "camera": "12MP wide + 12MP ultrawide",
+    "battery": "Up to 17 hours video playback",
+    "os": "iOS 15"
+  },
+  "current_price":{"$numberDouble":  899.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":799.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":999.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"19",
+  "product_name": "Bose Noise Cancelling Headphones 700",
+  "category": "Headphone",
+  "brand": "Bose",
+  "model": "700",
+  "specifications": {
+    "type": "Over-ear",
+    "connectivity": "Bluetooth 5.0",
+    "noise_cancellation": "Yes, Adjustable",
+    "battery_life": "Up to 20 hours",
+    "features": "Touch controls, Bose AR enabled"
+  },
+  "current_price":{"$numberDouble":  379.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":388.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":599.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":450.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"20",
+  "product_name": "Grado SR80e Prestige Series",
+  "category": "Headphone",
+  "brand": "Grado",
+  "model": "SR80e",
+  "specifications": {
+    "type": "On-ear",
+    "connectivity": "Wired",
+    "noise_cancellation": "No",
+    "features": "Open back, Dynamic drivers"
+  },
+  "current_price":{"$numberDouble":  125.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":100.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":200.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"21",
+  "product_name": "Jaybird Vista 2",
+  "category": "Headphone",
+  "brand": "Jaybird",
+  "model": "Vista 2",
+  "specifications": {
+    "type": "In-ear",
+    "connectivity": "Bluetooth 5.0",
+    "noise_cancellation": "Yes, Active",
+    "battery_life": "Up to 8 hours (24 hours with charging case)",
+    "features": "Waterproof, Sport Fit"
+  },
+  "current_price":{"$numberDouble":  199.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":100.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":200.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"22",
+  "product_name": "JBL Tune 500BT",
+  "category": "Headphone",
+  "brand": "JBL",
+  "model": "Tune 500BT",
+  "specifications": {
+    "type": "On-ear",
+    "connectivity": "Bluetooth 4.1",
+    "noise_cancellation": "No",
+    "battery_life": "Up to 16 hours",
+    "features": "Foldable design, Hands-free calls"
+  },
+  "current_price":{"$numberDouble":  49.95},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":59.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":70.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":60.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"23",
+  "product_name": "Sennheiser HD 660 S",
+  "category": "Headphone",
+  "brand": "Sennheiser",
+  "model": "HD 660 S",
+  "specifications": {
+    "type": "Over-ear",
+    "connectivity": "Wired",
+    "noise_cancellation": "No",
+    "features": "Open back, High fidelity sound, Low impedance"
+  },
+  "current_price":{"$numberDouble":  499.95},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":355.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"24",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "128GB",
+    "ram": "8GB with 128GB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1099.95},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":2000.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1230.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1234.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"25",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "256GB",
+    "ram": "8GB with 128GB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1199.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1300.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1099.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"26",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "256GB",
+    "ram": "16GB with 1TB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1299.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"27",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "512GB",
+    "ram": "16GB with 1TB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1299.95},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"28",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "1TB",
+    "ram": "16GB with 2TB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1499.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1799.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1699.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"29",
+  "product_name": "Apple iPad Pro 12.9-inch (5th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Pro 12.9-inch",
+  "specifications": {
+    "display": "12.9-inch Liquid Retina XDR display",
+    "processor": "Apple M1 chip",
+    "storage": "2TB",
+    "ram": "16GB with 2TB storage",
+    "camera": "12MP Wide and 10MP Ultra Wide back cameras, 12MP front camera",
+    "battery": "Up to 10 hours of surfing the web on Wi-Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  1599.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":1499.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1399.00}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":1599.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"30",
+  "product_name": "Samsung Galaxy Tab S7",
+  "category": "Pad",
+  "brand": "Samsung",
+  "model": "Galaxy Tab S7",
+  "specifications": {
+    "display": "11-inch TFT LCD screen, 120Hz",
+    "processor": "Snapdragon 865+",
+    "storage": "256GB",
+    "ram": "6GB",
+    "camera": "13MP rear and 8MP front cameras",
+    "battery": "8000mAh",
+    "os": "Android"
+  },
+  "current_price":{"$numberDouble":  649.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":749.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":669.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":569.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"31",
+  "product_name": "Samsung Galaxy Tab S7",
+  "category": "Pad",
+  "brand": "Samsung",
+  "model": "Galaxy Tab S7",
+  "specifications": {
+    "display": "11-inch TFT LCD screen, 120Hz",
+    "processor": "Snapdragon 865+",
+    "storage": "512GB",
+    "ram": "8GB",
+    "camera": "13MP rear and 8MP front cameras",
+    "battery": "8000mAh",
+    "os": "Android"
+  },
+  "current_price":{"$numberDouble":  849.00},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":980.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":1000.00}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":988.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"32",
+  "product_name": "iPad Mini (6th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Mini",
+  "specifications": {
+    "display": "8.3-inch Liquid Retina display",
+    "processor": "A15 Bionic chip",
+    "storage": "256GB",
+    "ram": "4GB",
+    "camera": "12MP Wide back camera, 12MP front camera with Center Stage",
+    "battery": "Up to 10 hours of surfing the web on Wi‑Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  699.95},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":700.00}
+    }
+  ]
+},
+
+{
+  "product_string_id":"33",
+  "product_name": "iPad Mini (6th Generation)",
+  "category": "Pad",
+  "brand": "Apple",
+  "model": "iPad Mini",
+  "specifications": {
+    "display": "8.3-inch Liquid Retina display",
+    "processor": "A15 Bionic chip",
+    "storage": "64GB",
+    "ram": "4GB",
+    "camera": "12MP Wide back camera, 12MP front camera with Center Stage",
+    "battery": "Up to 10 hours of surfing the web on Wi‑Fi or watching video",
+    "os": "iPadOS"
+  },
+  "current_price":{"$numberDouble":  499},
+  "price_history":[
+    {
+      "time": {"$date": "2023-01-01T00:00:00Z"},
+      "price": {"$numberDouble":501.00}
+    },
+    {
+      "time": {"$date": "2023-02-01T00:00:00Z"},
+      "price": {"$numberDouble":619.99}
+    },
+    {
+      "time": {"$date": "2023-05-07T00:00:00Z"},
+      "price": {"$numberDouble":456.00}
+    }
+  ]
+}
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733

@@ -1,6 +1,6 @@
 [
   {
-    "firebaseId":"firebaseone",
+    "firebase_id":"firebaseone",
     "email": "user123@example.com",
     "password": "qwertyui234567",
     "wishlist": [
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "firebaseId":"firebasetwo",
+    "firebase_id":"firebaseone",
     "email": "user456@example.com",
     "password": "2345tghjopl",
     "wishlist": ["4",
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "firebaseId":"firebasethree",
+    "firebase_id":"firebaseone",
     "email": "user789@example.com",
     "password": "65esxcvhj",
     "wishlist": [
@@ -27,7 +27,6 @@
   }
   
 ]
-
 
 
 

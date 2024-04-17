@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/config/MongoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -23,6 +24,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/updated_product.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/users.json" afterDir="false" />
     </list>
+=======
+    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge" />
+>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,13 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="2024_LeetCode_Bootcamp_TechCompare" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ECommerceDemo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E-commerce-demo1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leetcode2024spring.ecommercedemo1.ECommerceDemo1Application" />
@@ -127,7 +124,12 @@
       <workItem from="1712702648713" duration="1867000" />
       <workItem from="1712772213780" duration="11535000" />
       <workItem from="1712786100863" duration="11770000" />
+<<<<<<< HEAD
       <workItem from="1713314491379" duration="660000" />
+=======
+      <workItem from="1712851079707" duration="166000" />
+      <workItem from="1713306386961" duration="3023000" />
+>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -137,6 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolve conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolve conflicts" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="&quot;resolve conflicts&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;resolve conflicts&quot;" />
   </component>
 </project>
