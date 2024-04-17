@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/ECommerceDemo1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/ECommerceDemo1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/StoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/StoreServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/StoreServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/ECommerceDemo1Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/ECommerceDemo1Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product$ProductBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Review.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Specification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Specification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Store$StoreBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Store$StoreBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/UserServiceImp.class" beforeDir="false" />
-    </list>
+    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolve conflicts" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="&quot;resolve conflicts&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;resolve conflicts&quot;" />
   </component>
 </project>
