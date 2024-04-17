@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="resolve conflicts" />
+    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolve conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolve conflicts" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="&quot;resolve conflicts&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;resolve conflicts&quot;" />
   </component>
 </project>
