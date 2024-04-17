@@ -16,7 +16,7 @@ import java.util.Map;
 @Data
 @Builder
 
-@Document(collection = "Products")
+@Document(collection = "Product")
 public class Product {
 
     public static final String SEQUENCE_NAME = "product_sequence";
