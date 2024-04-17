@@ -1,9 +1,12 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
 import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
+import com.leetcode2024spring.ecommercedemo1.collection.Inventory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
+import com.leetcode2024spring.ecommercedemo1.collection.Store;
 import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
+import com.leetcode2024spring.ecommercedemo1.repository.StoreRepository;
 import io.micrometer.common.util.internal.logging.InternalLogger;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +23,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,13 +34,14 @@ public class ProductServiceImp {
     @Autowired
     private MongoTemplate mongoTemplate;
     @Autowired
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
+    private final StoreRepository storeRepository;
 
     //private SequenceGeneratorService sequenceGeneratorService;
 
-    public ProductServiceImp(ProductRepository productRepository) {
+    public ProductServiceImp(ProductRepository productRepository, StoreRepository storeRepository) {
         this.productRepository = productRepository;
-        //this.sequenceGeneratorService = sequenceGeneratorService;
+        this.storeRepository = storeRepository;
     }
 
     public void printAllProducts() {
@@ -128,6 +130,20 @@ public class ProductServiceImp {
         Product product = productRepository.findByProductStringId(productStringId);
         return product != null ? product.getPriceHistory() : null;
     }
+
+    public List<Product> findProductsByStoreIds(String[] storeIds) {
+        List<Store> stores = storeRepository.findByStoreStringIdIn(Arrays.asList(storeIds));
+        Set<String> productIds = new HashSet<>();
+        for (Store store : stores) {
+            store.getInventory().stream()
+                    .filter(inv -> inv.getQuantity() > 0)
+                    .forEach(inv -> productIds.add(inv.getProductStringId()));
+        }
+
+        return productRepository.findByIdIn(new ArrayList<>(productIds));
+    }
+
+
 
     public String compareProductsByPrice(Product product1, Product product2) {
         // need to add more detailed information
