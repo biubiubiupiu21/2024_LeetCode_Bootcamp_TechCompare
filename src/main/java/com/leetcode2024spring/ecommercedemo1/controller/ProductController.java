@@ -7,6 +7,9 @@ import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 
 import java.util.Arrays;
@@ -14,6 +17,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/products")
 @AllArgsConstructor
 public class ProductController {
