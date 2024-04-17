@@ -8,9 +8,7 @@ import com.leetcode2024spring.ecommercedemo1.service.StoreService;
 import com.leetcode2024spring.ecommercedemo1.service.StoreServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -40,10 +38,6 @@ public class StoreController {
         }
         return res;
     }
-
-
-
-
 
 
 }

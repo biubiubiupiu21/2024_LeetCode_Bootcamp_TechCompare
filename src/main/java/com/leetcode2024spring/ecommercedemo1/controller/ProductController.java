@@ -3,7 +3,6 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
-import com.leetcode2024spring.ecommercedemo1.collection.User;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
@@ -38,18 +35,6 @@ public class ProductController {
         System.out.println(product.getCategory());
         return product;
     }
-
-
-    @GetMapping("/{productStringId}")
-    public ResponseEntity<Product> getProductByStringId(@PathVariable String productStringId) {
-        Product product = productService.getByProductStringId(productStringId);
-        if (product != null) {
-            return ResponseEntity.ok(product);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
-
 
     @GetMapping("/bycategory")
     public List<Product> getProductsByCategory(@RequestParam("category") String category) {
@@ -111,16 +96,6 @@ public class ProductController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(priceHistory);
-    }
-
-    @GetMapping("/bystores")
-    public ResponseEntity<List<Product>> getProductsByStoreIdsAndInventory(
-            @RequestParam("storeIds") String[] storeIds) {
-        List<Product> products = productService.findProductsByStoreIds(storeIds);
-        if (products.isEmpty()) {
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.ok(products);
     }
 
 

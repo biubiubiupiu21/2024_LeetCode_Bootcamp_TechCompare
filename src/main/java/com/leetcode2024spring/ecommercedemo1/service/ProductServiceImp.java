@@ -1,12 +1,9 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
 import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
-import com.leetcode2024spring.ecommercedemo1.collection.Inventory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
-import com.leetcode2024spring.ecommercedemo1.collection.Store;
 import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
-import com.leetcode2024spring.ecommercedemo1.repository.StoreRepository;
 import io.micrometer.common.util.internal.logging.InternalLogger;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +20,9 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 
-import java.util.*;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -34,14 +33,13 @@ public class ProductServiceImp {
     @Autowired
     private MongoTemplate mongoTemplate;
     @Autowired
-    private final ProductRepository productRepository;
-    private final StoreRepository storeRepository;
+    private ProductRepository productRepository;
 
     //private SequenceGeneratorService sequenceGeneratorService;
 
-    public ProductServiceImp(ProductRepository productRepository, StoreRepository storeRepository) {
+    public ProductServiceImp(ProductRepository productRepository) {
         this.productRepository = productRepository;
-        this.storeRepository = storeRepository;
+        //this.sequenceGeneratorService = sequenceGeneratorService;
     }
 
     public void printAllProducts() {
@@ -66,8 +64,8 @@ public class ProductServiceImp {
         return optionalProduct.orElse(null); // Return null if product is not found
     }
 
-    public Product getByProductStringId(String productStringId) {
-        Product product = productRepository.findByProductStringId(productStringId);
+    public Product getByProductStringId(String id) {
+        Product product = productRepository.findByProductStringId(id);
         return product; // Return null if product is not found
     }
 
@@ -81,8 +79,10 @@ public class ProductServiceImp {
 
 
     public List<Product> searchProductsByName(String name) {
-        String regex = ".*" + name + ".*";
-        return productRepository.findByProductNameMatches(regex);
+//        log.info("Searching for products with name containing: {}", name);
+        List<Product> products = productRepository.findByProductNameMatches(name);
+//        log.info("Found {} products", products.size());
+        return productRepository.findByProductNameMatches(name);
     }
 
     public List<String> getAllCategories() {
@@ -128,20 +128,6 @@ public class ProductServiceImp {
         Product product = productRepository.findByProductStringId(productStringId);
         return product != null ? product.getPriceHistory() : null;
     }
-
-    public List<Product> findProductsByStoreIds(String[] storeIds) {
-        List<Store> stores = storeRepository.findByStoreStringIdIn(Arrays.asList(storeIds));
-        Set<String> productIds = new HashSet<>();
-        for (Store store : stores) {
-            store.getInventory().stream()
-                    .filter(inv -> inv.getQuantity() > 0)
-                    .forEach(inv -> productIds.add(inv.getProductStringId()));
-        }
-
-        return productRepository.findByIdIn(new ArrayList<>(productIds));
-    }
-
-
 
     public String compareProductsByPrice(Product product1, Product product2) {
         // need to add more detailed information
