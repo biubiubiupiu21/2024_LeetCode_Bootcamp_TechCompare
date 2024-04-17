@@ -71,13 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="2024_LeetCode_Bootcamp_TechCompare" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ECommerceDemo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E-commerce-demo1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leetcode2024spring.ecommercedemo1.ECommerceDemo1Application" />
