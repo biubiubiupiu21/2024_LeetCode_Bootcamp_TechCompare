@@ -2,7 +2,6 @@ package com.leetcode2024spring.ecommercedemo1.service;
 
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.User;
-import com.leetcode2024spring.ecommercedemo1.collection.wlist;
 import com.leetcode2024spring.ecommercedemo1.repository.UserRepository;
 import com.mongodb.client.result.UpdateResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,14 +74,15 @@ public class UserServiceImp implements UserService {
     public boolean upsertWishlist(@RequestParam String email, @RequestParam String productStringId) {
         Query query = new Query();
         query.addCriteria(Criteria.where("email").is(email));
-        List<wlist> pIdList = userRepository.findByEmail(email).getWishlist();
-        List<wlist> newlist = new ArrayList<>();
-        for(wlist s: pIdList){
-            String pid = s.getProductStringId();
-            if(pid.equals(productStringId)) return false;
+
+        List<String> pIdList = userRepository.findByEmail(email).getWishlist();
+        List<String> newlist = new ArrayList<>();
+        if(pIdList.contains(productStringId)) return false;
+        for(String s: pIdList){
             newlist.add(s);
+            System.out.println(s);
         }
-        newlist.add(new wlist(new Date(), productStringId));
+        newlist.add(productStringId);
 
         Update update = new Update();
         update.set("wishlist", newlist); // Replace the entire hobbies array with the new list
@@ -95,15 +95,16 @@ public class UserServiceImp implements UserService {
     public boolean updateWishlist(@RequestParam String email, @RequestParam String productStringId) {
         Query query = new Query();
         query.addCriteria(Criteria.where("email").is(email));
-        boolean flag = false;
-        List<wlist> pIdList = userRepository.findByEmail(email).getWishlist();
-        List<wlist> newlist = new ArrayList<>();
-        for(wlist s: pIdList){
-            String pid = s.getProductStringId();
-            if(pid.equals(productStringId)) flag = true;
-            else newlist.add(s);
+
+        List<String> pIdList = userRepository.findByEmail(email).getWishlist();
+        List<String> newlist = new ArrayList<>();
+        if(!pIdList.contains(productStringId)) return false;
+        for(String s: pIdList){
+            newlist.add(s);
+            System.out.println(s);
         }
-        if(!flag) return false;
+        newlist.remove(productStringId);
+
         Update update = new Update();
         update.set("wishlist", newlist); // Replace the entire hobbies array with the new list
 

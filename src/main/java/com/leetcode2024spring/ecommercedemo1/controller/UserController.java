@@ -2,7 +2,6 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.User;
-import com.leetcode2024spring.ecommercedemo1.collection.wlist;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.UserService;
 import com.leetcode2024spring.ecommercedemo1.service.UserServiceImp;
@@ -65,10 +64,10 @@ public class UserController {
 
     @GetMapping("/getWishlist")
     public List<Product> getWishlist(String email){
-        List<wlist> pIdList = userService.findByEmail(email).getWishlist();
+        List<String> pIdList = userService.findByEmail(email).getWishlist();
         List<Product> res = new LinkedList<>();
-        for(wlist s : pIdList){
-            Product pro = productService.getByProductStringId(s.getProductStringId());
+        for(String s : pIdList){
+            Product pro = productService.getByProductStringId(s);
             res.add(pro);
         }
         return res;

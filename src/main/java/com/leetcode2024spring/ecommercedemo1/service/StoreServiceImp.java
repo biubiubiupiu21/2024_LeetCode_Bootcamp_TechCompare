@@ -17,4 +17,6 @@ public class StoreServiceImp implements StoreService{
     public List<Store> getAllStore() {
         return storeRepository.findAll();
     }
+
+
 }

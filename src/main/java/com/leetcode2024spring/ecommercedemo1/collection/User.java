@@ -19,11 +19,11 @@ public class User {
     private String password;
     @Setter
     @Getter
-    private List<wlist> wishlist;
+    private List<String> wishlist;
     private String firebase_id;
     private String email;
 
-    public User(String firebase_id, String email, String password, List<wlist> wishlist) {
+    public User(String firebase_id, String email, String password, List<String> wishlist) {
         this.firebase_id = firebase_id;
         this.email = email;
         this.password = password;
