@@ -141,6 +141,33 @@ public class ProductServiceImp {
         return productRepository.findByIdIn(new ArrayList<>(productIds));
     }
 
+    public List<Product> findProductsByCriteria(String category, String brand, Double minPrice, Double maxPrice, String store) {
+        Query query = new Query();
+        
+        Criteria criteria = new Criteria();
+
+        if (category != null) {
+            criteria = criteria.and("category").is(category);
+        }
+        if (brand != null) {
+            criteria = criteria.and("brand").is(brand);
+        }
+        if (minPrice != null && maxPrice != null) {
+            criteria = criteria.and("currentPrice").gte(minPrice).lte(maxPrice); // Ensuring that price is between minPrice and maxPrice
+        } else if (minPrice != null) {
+            criteria = criteria.and("currentPrice").gte(minPrice);
+        } else if (maxPrice != null) {
+            criteria = criteria.and("currentPrice").lte(maxPrice);
+        }
+//        if (store != null) {
+//            criteria = criteria.and("store").is(store);
+//        }
+
+        query.addCriteria(criteria);
+
+        return mongoTemplate.find(query, Product.class);
+    }
+
 
 
     public String compareProductsByPrice(Product product1, Product product2) {

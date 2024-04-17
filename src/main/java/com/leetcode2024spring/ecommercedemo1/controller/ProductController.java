@@ -123,6 +123,15 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 
+    @GetMapping
+    public List<Product> getProductsByAll(@RequestParam(required = false) String category,
+                                          @RequestParam(required = false) String brand,
+                                          @RequestParam(required = false) Double minPrice,
+                                          @RequestParam(required = false) Double maxPrice,
+                                          @RequestParam(required = false) String store) {
+        return productService.findProductsByCriteria(category, brand, minPrice, maxPrice, store);
+    }
+
 
 
     @PostMapping("/compare")
