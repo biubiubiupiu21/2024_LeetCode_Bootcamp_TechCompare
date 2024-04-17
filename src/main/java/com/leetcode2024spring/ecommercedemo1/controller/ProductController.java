@@ -68,14 +68,14 @@ public class ProductController {
     }
 
 
-    @GetMapping("/compare")
+    @PostMapping("/compare")
     public String compareProducts(
             @RequestParam("productId1") String productId1,
             @RequestParam("productId2") String productId2
     ) {
         // Retrieve products from repository based on product IDs
-        Product product1 = productService.getById(productId1);
-        Product product2 = productService.getById(productId2);
+        Product product1 = productService.getByProductStringId(productId1);
+        Product product2 = productService.getByProductStringId(productId2);
 
         if (product1 != null && product2 != null) {
             // Perform comparison based on price
@@ -90,12 +90,22 @@ public class ProductController {
         }
     }
     @PostMapping("/sendreview")
-    public String sendReview(String id, Review review){
+    public String sendReview(@RequestParam("id")String id, @RequestBody Review review){
         return productService.sendReview(id,review);
     }
-    @PostMapping("/getreview")
-    public List<Review> getReview(String id){
+    @GetMapping("/getreview")
+    public List<Review> getReview(@RequestParam("productStringId")String id){
         return productService.getReviewById(id);
+    }
+
+    @GetMapping("/getest")
+    public Product getest(){
+        return productService.gettest();
+    }
+
+    @GetMapping("/getest2")
+    public void getest2(){
+        productService.printAllProducts();
     }
 }
 

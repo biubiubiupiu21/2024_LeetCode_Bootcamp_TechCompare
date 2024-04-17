@@ -17,8 +17,8 @@ import java.util.Map;
 
 @Document(collection = "Products")
 public class Product {
-    //public static final String SEQUENCE_NAME = "product_sequence";
-    //    @Id
+    //public static final String SEQUENCE_NAME = "product_sequence"
+
     private String productStringId;
 
     private String productName;
@@ -139,11 +139,13 @@ public class Product {
     }
 
     public List<Review> getReview() {
-        return review;
+        return this.review;
     }
 
     public void setReview(Review review) {
         this.review.add(review);
+//        review.setProduct(this); // Ensuring the bidirectional link is maintained
+        System.out.println("Add review: " + review);
     }
 
 
