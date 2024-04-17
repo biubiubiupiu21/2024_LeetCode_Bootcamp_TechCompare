@@ -66,8 +66,8 @@ public class ProductServiceImp {
         return optionalProduct.orElse(null); // Return null if product is not found
     }
 
-    public Product getByProductStringId(String id) {
-        Product product = productRepository.findByProductStringId(id);
+    public Product getByProductStringId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
         return product; // Return null if product is not found
     }
 
