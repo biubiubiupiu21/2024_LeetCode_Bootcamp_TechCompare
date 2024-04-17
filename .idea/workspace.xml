@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge" />
+    <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="API-getProductbyId" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,7 +77,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ECommerceDemo1Application.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "API-GetProductByStore",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ericyuan/Desktop/nyu/2023_2024_2/leetcode/期中/2024_LeetCode_Bootcamp_TechCompare/src/main/resources",
