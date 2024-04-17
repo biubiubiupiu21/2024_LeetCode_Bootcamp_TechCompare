@@ -12,12 +12,17 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private TokenInterceptor tokenInterceptor;
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(tokenInterceptor)
-                .excludePathPatterns("/techCompare/user/login") // 排除登录接口
-                .addPathPatterns("/**"); // 拦截其他所有路径
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(tokenInterceptor)
+//                .addPathPatterns("/**") // 拦截其他所有路径
+//                .excludePathPatterns("/techCompare/user/login")// 排除登录接口
+//                .excludePathPatterns("/user/register")
+//                .excludePathPatterns("/techCompare/products/getall");
+//
+//    }
+
+
 
 }
 

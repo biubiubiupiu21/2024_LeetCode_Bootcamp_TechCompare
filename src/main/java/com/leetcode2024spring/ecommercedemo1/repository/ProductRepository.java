@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
 
-@Document(collection = "Products")
+@Document(collection = "Product")
 public interface ProductRepository extends MongoRepository<Product,String> {
     Product findByProductStringId(String productStringId);
 
