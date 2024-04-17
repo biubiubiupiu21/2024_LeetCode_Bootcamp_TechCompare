@@ -1,21 +1,39 @@
 package com.leetcode2024spring.ecommercedemo1.service;
 
+import com.leetcode2024spring.ecommercedemo1.collection.PriceHistory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Review;
 import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
+import io.micrometer.common.util.internal.logging.InternalLogger;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductServiceImp {
+
+    //private static final Logger log = LoggerFactory.getLogger(ProductServiceImp.class);
+
     @Autowired
     private ProductRepository productRepository;
+
+    //private SequenceGeneratorService sequenceGeneratorService;
+
+    public ProductServiceImp(ProductRepository productRepository, SequenceGeneratorService sequenceGeneratorService) {
+        this.productRepository = productRepository;
+        //this.sequenceGeneratorService = sequenceGeneratorService;
+    }
+
 
 
     public List<Product> getAllProducts(){
@@ -35,12 +53,75 @@ public class ProductServiceImp {
 
     public Product getByProductStringId(String id) {
         Product product = (productRepository.findByProductStringId(id));
-//        System.out.println(product.getCategory());
-//        List<Product> products = productRepository.findAll();
-//        for (Product p:products){
-//            System.out.println(p.getCategory());
-//        }
+        System.out.println(12345);
+        System.out.println(product.getProductName());
+        System.out.println(product.getCategory());
+        List<Product> products = productRepository.findAll();
+        for (Product p:products){
+            System.out.println(p.getCategory());
+        }
+
         return product; // Return null if product is not found
+    }
+
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findByCategory(category);
+    }
+
+    public List<Product> getProductsByBrand(String brand) {
+        return productRepository.findByBrand(brand);
+    }
+
+
+    public List<Product> searchProductsByName(String name) {
+//        log.info("Searching for products with name containing: {}", name);
+        List<Product> products = productRepository.findByProductNameMatches(name);
+//        log.info("Found {} products", products.size());
+        return productRepository.findByProductNameMatches(name);
+    }
+
+    public List<String> getAllCategories() {
+        return productRepository.findAllCategories().stream()
+                .map(Product::getCategory)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<String> getAllBrands() {
+        return productRepository.findAllBrands().stream()
+                .map(Product::getBrand)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<Product> getProductsByPriceRange(Double minPrice, Double maxPrice) {
+        return productRepository.findByPriceRange(minPrice, maxPrice);
+    }
+
+    public List<Product> getOtherProductsInCategory(String productId) {
+        // Use your custom method to find the product by its string ID
+        Product product = productRepository.findByProductStringId(productId);
+        if (product == null) {
+            throw new NoSuchElementException("Product not found with ID: " + productId);
+        }
+
+        // Now that you have the product and hence its category, fetch other products in the same category
+        return productRepository.findByCategoryAndIdNot(product.getCategory(), productId);
+    }
+
+    public List<Review> getReviewsByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getReview() : null;
+    }
+
+    public Double getPriceByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getCurrentPrice() : null;
+    }
+
+    public List<PriceHistory> getPriceHistoryByProductId(String productStringId) {
+        Product product = productRepository.findByProductStringId(productStringId);
+        return product != null ? product.getPriceHistory() : null;
     }
 
     public String compareProductsByPrice(Product product1, Product product2) {
