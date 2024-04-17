@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -96,6 +97,16 @@ public class ProductController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(priceHistory);
+    }
+
+    @GetMapping("/bystores")
+    public ResponseEntity<List<Product>> getProductsByStoreIdsAndInventory(
+            @RequestParam("storeIds") String[] storeIds) {
+        List<Product> products = productService.findProductsByStoreIds(storeIds);
+        if (products.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.ok(products);
     }
 
 

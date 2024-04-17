@@ -17,6 +17,7 @@ import java.util.List;
 
 @Document(collection = "Store")
 public class Store {
+    private String storeStringId;
     private String name;
     private Location location;
     private String address;
@@ -26,7 +27,8 @@ public class Store {
         inventory = new ArrayList<>();
     }
 
-    public Store(String name, Location location, String address, List<Inventory> inventory){
+    public Store(String storeStringId, String name, Location location, String address, List<Inventory> inventory){
+        this.storeStringId = storeStringId;
         this.name = name;
         this.location = location;
         this.address = address;
