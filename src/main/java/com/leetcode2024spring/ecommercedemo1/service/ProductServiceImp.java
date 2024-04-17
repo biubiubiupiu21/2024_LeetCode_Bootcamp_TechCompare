@@ -7,9 +7,15 @@ import com.leetcode2024spring.ecommercedemo1.repository.ProductRepository;
 import io.micrometer.common.util.internal.logging.InternalLogger;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
@@ -25,6 +31,8 @@ public class ProductServiceImp {
     //private static final Logger log = LoggerFactory.getLogger(ProductServiceImp.class);
 
     @Autowired
+    private MongoTemplate mongoTemplate;
+    @Autowired
     private ProductRepository productRepository;
 
     //private SequenceGeneratorService sequenceGeneratorService;
@@ -32,6 +40,11 @@ public class ProductServiceImp {
     public ProductServiceImp(ProductRepository productRepository, SequenceGeneratorService sequenceGeneratorService) {
         this.productRepository = productRepository;
         //this.sequenceGeneratorService = sequenceGeneratorService;
+    }
+
+    public void printAllProducts() {
+        List<Product> products = productRepository.findAll();
+        products.forEach(System.out::println);
     }
 
 
@@ -52,15 +65,14 @@ public class ProductServiceImp {
     }
 
     public Product getByProductStringId(String id) {
-        Product product = (productRepository.findByProductStringId(id));
-        System.out.println(12345);
-        System.out.println(product.getProductName());
-        System.out.println(product.getCategory());
-        List<Product> products = productRepository.findAll();
-        for (Product p:products){
-            System.out.println(p.getCategory());
-        }
-
+        Product product = productRepository.findByProductStringId(id);
+//        System.out.println(12345);
+//        System.out.println(product.getProductName());
+//        System.out.println(product.getCategory());
+//        List<Product> products = productRepository.findAll();
+//        for (Product p:products){
+//            System.out.println(p.getCategory());
+//        }
         return product; // Return null if product is not found
     }
 
@@ -151,20 +163,60 @@ public class ProductServiceImp {
         }
         return "Different Category";
     }
-
+    @Transactional
     public String sendReview(String id, Review review){
         // find authentation by firebase_id
-        Product product = productRepository.findByProductStringId(id);
-        // includes comment, rating etc.
-        product.setReview(review);
-        return review.getComment();
+//        Product product = productRepository.findByProductStringId(id);
+//        if (product == null) {
+//            throw new IllegalArgumentException("Product not found with ID: " + id);
+//        }
+//        // includes comment, rating etc.
+//        product.setReview(review);
+//        productRepository.save(product);
+//        return review.getComment();
+        // Query to find the product by its string ID
+        Query query = new Query();
+        query.addCriteria(Criteria.where("productStringId").is(id));
+
+        // Fetch the current reviews from the product
+        Product product = mongoTemplate.findOne(query, Product.class);
+        if (product == null) {
+            return "Not Find Product";
+        }
+
+        // Assuming there is a list of reviews in the Product class
+        List<Review> reviews = product.getReview();
+        reviews.add(review); // Add the new review to the list
+
+        // Update operation to push a new review to the reviews array
+        Update update = new Update();
+        update.set("reviews", reviews); // This replaces the existing reviews list with the updated one
+
+        // Perform the update operation
+        mongoTemplate.updateFirst(query, update, Product.class);
+        return review.getComment(); // Return true indicating the review was added successfully
+
     }
 
     public List<Review> getReviewById(String id){
         Product product = productRepository.findByProductStringId(id);
+        if (product == null) {
+            throw new IllegalArgumentException("Product not found with ID: " + id);
+        }
         // includes comment, rating etc.
+        System.out.println("getreviews");
+        System.out.println(product.getCategory());
+
         List<Review> reviews = product.getReview();
+        for (Review each: reviews){
+            System.out.println(each.getComment());
+        }
         return reviews;
+    }
+
+    public Product gettest(){
+        Product product = productRepository.findByProductStringId("1");
+        return product;
     }
 
 

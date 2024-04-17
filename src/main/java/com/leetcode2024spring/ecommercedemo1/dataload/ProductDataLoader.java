@@ -24,7 +24,7 @@
 //    @Override
 //    public void run(String... args) throws IOException {
 //        // 指定JSON文件路径
-//        Resource resource = resourceLoader.getResource("classpath:updated_product.json");
+//        Resource resource = resourceLoader.getResource("classpath:product.json");
 //        ObjectMapper objectMapper = new ObjectMapper();
 //
 //        // 由于MongoDB使用的是，读取并解析JSON文件

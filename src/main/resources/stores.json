@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Best Buy - Downtown",
+    "location": {
+      "longitude": {"$numberDouble":-122.419416},
+      "latitude": {"$numberDouble":37.774929}
+    },
+    "address": "100 Market St, San Francisco, CA 94103",
+    "inventory": [
+      {
+        "productStringId": 4,
+        "quantity": 25
+      },
+      {
+        "productStringId": 3,
+        "quantity": 10
+      }
+    ]
+  },
+
+  {
+    "name": "Best Buy - Midtown",
+    "location": {
+      "longitude": {"$numberDouble": -73.985656},
+      "latitude": {"$numberDouble": 40.758896}
+    },
+    "address": "11 Times Square, New York, NY 10036",
+    "inventory": [
+      {
+        "productStringId": "5",
+        "quantity": 15
+      },
+      {
+        "productStringId": "6",
+        "quantity": 20
+      }
+    ]
+  },
+
+  {
+    "name": "Best Buy - plus",
+    "location": {
+      "longitude": {"$numberDouble": -87.628560},
+      "latitude": {"$numberDouble": 41.881832}
+    },
+    "address": "200 E Randolph St, Chicago, IL 60601",
+    "inventory": [
+      {
+        "productStringId": "21",
+        "quantity": 30
+      },
+      {
+        "productStringId": "32",
+        "quantity": 5
+      }
+    ]
+  }
+  
+  
+  
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

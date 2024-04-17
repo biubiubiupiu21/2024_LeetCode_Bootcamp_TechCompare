@@ -18,8 +18,10 @@ import java.util.Map;
 
 @Document(collection = "Products")
 public class Product {
+
     public static final String SEQUENCE_NAME = "product_sequence";
     //    @Id
+
     private String productStringId;
 
     private String productName;
@@ -89,8 +91,17 @@ public class Product {
         this.priceHistory = priceHistory;
     }
 
+//<<<<<<< HEAD
+//    public List<Review> getReview() {
+//        return this.review;
+//    }
+//
+//=======
+//>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
     public void setReview(Review review) {
         this.review.add(review);
+//        review.setProduct(this); // Ensuring the bidirectional link is maintained
+        System.out.println("Add review: " + review);
     }
 }
 
