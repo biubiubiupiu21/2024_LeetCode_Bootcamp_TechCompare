@@ -34,20 +34,10 @@ public class ECommerceDemo1Application {
 //
 //            List<PriceHistory> priceHistories = new ArrayList<PriceHistory>();
 //            priceHistories.add(new PriceHistory(new Timestamp(System.currentTimeMillis() - 10 * 24 * 60 * 60 * 1000L), 1200.00));
-//            priceHistories.add(new PriceHistory(new Timestamp(System.currentTimeMillis()), 1100.00));
-//
-////            Price_history[] priceHistories = {
-////                    new Price_history(new Timestamp(System.currentTimeMillis() - 10 * 24 * 60 * 60 * 1000L), 1200.00),
-////                    new Price_history(new Timestamp(System.currentTimeMillis()), 1100.00)
-////            };
 //
 //            List<Review> reviews = new ArrayList<>();
-//            reviews.add(new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),"test1@nyu.edu"));
-//            reviews.add(new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),"test2@nyu.edu"));
-////            Review[] reviews ={
-////                    new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),34),
-////                    new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),9)
-////            };
+//            reviews.add(new Review( "Great!",5, Timestamp.valueOf("2023-01-08 00:00:00"),34));
+//            reviews.add(new Review("Will back again",5, Timestamp.valueOf("2023-01-11 00:00:00"),9));
 //
 //            Product product = new Product("109", "custom-id-laptop-109",1100.00,"Laptop","Dell","G15",specs,priceHistories,reviews);
 //            repository.save(product);
