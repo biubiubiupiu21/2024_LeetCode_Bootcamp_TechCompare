@@ -2,6 +2,7 @@
   "_id": {
     "$oid": "6616c34c4919ebf7023997d7"
   },
+  "storeStringId": "1",
   "name": "Best Buy - Downtown",
   "location": {
     "longitude": -122.419416,
@@ -23,6 +24,7 @@
   "_id": {
     "$oid": "6616c34c4919ebf7023997d8"
   },
+  "storeStringId": "2",
   "name": "Best Buy - Midtown",
   "location": {
     "longitude": -73.985656,
@@ -44,6 +46,7 @@
   "_id": {
     "$oid": "6616c34c4919ebf7023997d9"
   },
+  "storeStringId": "3",
   "name": "Best Buy - plus",
   "location": {
     "longitude": -87.62856,
