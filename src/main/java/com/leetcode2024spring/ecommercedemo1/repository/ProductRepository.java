@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
 
-@Document(collection = "Products")
+@Document(collection = "Product")
 public interface ProductRepository extends MongoRepository<Product,String> {
     Product findByProductStringId(String productStringId);
 
@@ -17,6 +17,7 @@ public interface ProductRepository extends MongoRepository<Product,String> {
 
     List<Product> findByBrand(String brand);
 
+    @Query("{ 'productName' : { $regex: ?0, $options: 'i' } }")
     List<Product> findByProductNameMatches(String regex);
 
     //specifying a MongoDB query with two parts: value and fields.
@@ -37,8 +38,8 @@ public interface ProductRepository extends MongoRepository<Product,String> {
     @Query("{'category': ?0, 'productStringId': {$ne: ?1}}")
     List<Product> findByCategoryAndIdNot(String category, String excludeProductId);
 
-
-
+    @Query("{'productStringId': {$in: ?0}}")
+    List<Product> findByIdIn(List<String> productIds);
 
     List<Review> findByReview(String productStringId);
 

@@ -2,6 +2,7 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.User;
+import com.leetcode2024spring.ecommercedemo1.collection.wlist;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.UserService;
 import com.leetcode2024spring.ecommercedemo1.service.UserServiceImp;
@@ -12,13 +13,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/user")
 public class UserController {
 
@@ -61,10 +65,10 @@ public class UserController {
 
     @GetMapping("/getWishlist")
     public List<Product> getWishlist(String email){
-        List<String> pIdList = userService.findByEmail(email).getWishlist();
+        List<wlist> pIdList = userService.findByEmail(email).getWishlist();
         List<Product> res = new LinkedList<>();
-        for(String s : pIdList){
-            Product pro = productService.getByProductStringId(s);
+        for(wlist s : pIdList){
+            Product pro = productService.getByProductStringId(s.getProductStringId());
             res.add(pro);
         }
         return res;

@@ -19,9 +19,7 @@ import java.util.Map;
 @Document(collection = "Product")
 public class Product {
 
-    public static final String SEQUENCE_NAME = "product_sequence";
-    //    @Id
-
+    //public static final String SEQUENCE_NAME = "product_sequence";
     private String productStringId;
 
     private String productName;
