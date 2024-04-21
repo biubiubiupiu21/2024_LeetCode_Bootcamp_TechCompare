@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ccec81-f61d-440c-89bf-15b4678be5fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/PriceHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/PriceHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Specification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/PriceHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/PriceHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product$ProductBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Specification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.class" afterDir="false" />
+    <list default="true" id="51ccec81-f61d-440c-89bf-15b4678be5fb" name="Changes" comment="merge">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +30,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ECommerceDemo1Application.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;API-with-all&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ericyuan/Desktop/nyu/2023_2024_2/leetcode/期中/2024_LeetCode_Bootcamp_TechCompare/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ECommerceDemo1Application.executor": "Run",
+    "git-widget-placeholder": "lja__branch",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ericyuan/Desktop/nyu/2023_2024_2/leetcode/期中/2024_LeetCode_Bootcamp_TechCompare/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -100,5 +87,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
 </project>
