@@ -2,7 +2,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://tcAdmin:123456@localhost:27017/techCompare
-      #uri: mongodb://eric:szy11408@localhost:27017/admin
+#      uri: mongodb://eric:szy11408@localhost:27017/admin
 #       uri: mongodb+srv://techCompare:TFkMwBs3wRhWPU1a@cluster0.oooglym.mongodb.net/techCompare
 
 jwt:
