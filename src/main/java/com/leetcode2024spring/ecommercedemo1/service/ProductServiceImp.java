@@ -199,16 +199,6 @@ public class ProductServiceImp {
     }
     @Transactional
     public String sendReview(String id, Review review){
-        // find authentation by firebase_id
-//        Product product = productRepository.findByProductStringId(id);
-//        if (product == null) {
-//            throw new IllegalArgumentException("Product not found with ID: " + id);
-//        }
-//        // includes comment, rating etc.
-//        product.setReview(review);
-//        productRepository.save(product);
-//        return review.getComment();
-        // Query to find the product by its string ID
         Query query = new Query();
         query.addCriteria(Criteria.where("productStringId").is(id));
 
@@ -224,7 +214,7 @@ public class ProductServiceImp {
 
         // Update operation to push a new review to the reviews array
         Update update = new Update();
-        update.set("reviews", reviews); // This replaces the existing reviews list with the updated one
+        update.set("review", reviews); // This replaces the existing reviews list with the updated one
 
         // Perform the update operation
         mongoTemplate.updateFirst(query, update, Product.class);
