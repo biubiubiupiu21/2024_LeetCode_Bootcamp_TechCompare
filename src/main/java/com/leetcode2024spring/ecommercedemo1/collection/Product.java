@@ -3,12 +3,10 @@ package com.leetcode2024spring.ecommercedemo1.collection;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,7 +17,6 @@ import java.util.Map;
 @Document(collection = "Product")
 public class Product {
 
-    //public static final String SEQUENCE_NAME = "product_sequence";
     private String productStringId;
 
     private String productName;
@@ -27,13 +24,23 @@ public class Product {
     private String category;
     private String brand;
     private String model;
-    private Specification specifications;
+    private Map<String, String> specifications;
     private List<PriceHistory> priceHistory;
     private List<Review> review;
 
-    public Product(){
-        priceHistory = new ArrayList<PriceHistory>();
+    private static final Map<String, Map<String, String>> DEFAULT_SPECIFICATIONS = new HashMap<>();
+
+    static {
+        // Initialize default specifications for laptops
+        Map<String, String> laptopSpecs = new HashMap<>();
+    }
+
+    // Product constructor
+    public Product() {
+        priceHistory = new ArrayList<>();
         review = new ArrayList<>();
+        // Initialize specifications with empty map to avoid null pointers
+        specifications = new HashMap<>();
     }
 
     public Product(String productStringId,
@@ -42,7 +49,7 @@ public class Product {
                    String category,
                    String brand,
                    String model,
-                   Specification specifications,
+                   Map<String, String> specifications,
                    List<PriceHistory> priceHistory,
                    List<Review> review) {
 
@@ -57,6 +64,13 @@ public class Product {
         this.review = review;
     }
 
+
+    // Setter for category with specifications initialization
+    public void setCategory(String category) {
+        this.category = category;
+        this.specifications = new HashMap<>(DEFAULT_SPECIFICATIONS.getOrDefault(category, new HashMap<>()));
+    }
+
     public void setProductStringId(String productStringId) {
         this.productStringId = productStringId;
     }
@@ -69,10 +83,6 @@ public class Product {
         this.currentPrice = currentPrice;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public void setBrand(String brand) {
         this.brand = brand;
     }
@@ -81,7 +91,7 @@ public class Product {
         this.model = model;
     }
 
-    public void setSpecifications(Specification specifications) {
+    public void setSpecifications(Map<String, String>  specifications) {
         this.specifications = specifications;
     }
 
