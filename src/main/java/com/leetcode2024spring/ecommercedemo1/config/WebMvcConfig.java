@@ -19,7 +19,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(tokenInterceptor)
                 .addPathPatterns("/**") // 拦截其他所有路径
                 .excludePathPatterns("/user/login")// 排除登录接口
-                .excludePathPatterns("/products/getall");
+                .excludePathPatterns("/products/getall")
+                .excludePathPatterns("/products/search");
     }
 
 
