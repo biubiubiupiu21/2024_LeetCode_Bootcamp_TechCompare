@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61a937e6-9124-4a73-b4ca-dcb8fd71fa5f" name="Changes" comment="merge">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/wlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/dataload/UserDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/UserServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
