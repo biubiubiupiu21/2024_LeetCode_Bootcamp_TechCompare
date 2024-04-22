@@ -32,8 +32,8 @@ public class ProductController {
     }
 
     @GetMapping("/getproduct")
-    public Product getproduct() {
-        Product product = productService.getByProductStringId("109");
+    public Product getproduct(@RequestParam("productStringId") String productStringId) {
+        Product product = productService.getByProductStringId(productStringId);
         System.out.println(product.getProductName());
         System.out.println(product.getCategory());
         return product;
@@ -43,6 +43,7 @@ public class ProductController {
     @GetMapping("/{productStringId}")
     public ResponseEntity<Product> getProductByStringId(@PathVariable String productStringId) {
         Product product = productService.getByProductStringId(productStringId);
+        System.out.println(" return product");
         if (product != null) {
             return ResponseEntity.ok(product);
         } else {
