@@ -52,7 +52,7 @@ public class UserDataLoader implements CommandLineRunner {
             System.out.println("Loaded users...");
         }
         else{
-            System.out.println("Already" + userCount + " users loaded!");
+            System.out.println("Already " + userCount + " users loaded!");
         }
     }
 }

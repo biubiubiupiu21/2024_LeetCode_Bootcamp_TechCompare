@@ -11,6 +11,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -45,6 +46,7 @@ public class UserController {
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody User user) {
         boolean loginSuccess = userService.loginUser(user.getEmail(), user.getPassword());
+        System.out.println("login: "+loginSuccess );
         if (loginSuccess) {
             JwtTokenUtil jwt = new JwtTokenUtil();
             String token = jwt.generateToken(user.getEmail());
@@ -64,7 +66,8 @@ public class UserController {
 
 
     @GetMapping("/getWishlist")
-    public List<Product> getWishlist(String email){
+    public List<Product> getWishlist(@RequestParam String email){
+        System.out.println("getwishlist__");
         List<wlist> pIdList = userService.findByEmail(email).getWishlist();
         List<Product> res = new LinkedList<>();
         for(wlist s : pIdList){
@@ -73,6 +76,31 @@ public class UserController {
         }
         return res;
     }
+
+    @PostMapping("/addWishlist") // 改为使用 POST 方法
+    public boolean addWishlist(@RequestParam String email, @RequestParam String productId) {
+        System.out.println("addwishlist__");
+        try {
+            userService.addToWishlist(email, productId);
+            System.out.println("add to wishlist");
+        } catch (Exception e) {
+            return false;
+        }
+        return false;
+    }
+
+    @PostMapping("/removeFromWishlist") // 改为使用 POST 方法
+    public boolean removeWishlist(@RequestParam String email, @RequestParam String productId) {
+        System.out.println("remove_from_wishlist");
+        try {
+            userService.removeFromWishlist(email, productId);
+            System.out.println("remove From wishlist");
+        } catch (Exception e) {
+            return false;
+        }
+        return false;
+    }
+
 
 
 

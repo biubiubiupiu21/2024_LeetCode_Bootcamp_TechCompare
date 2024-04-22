@@ -199,15 +199,6 @@ public class ProductServiceImp {
     }
     @Transactional
     public String sendReview(String id, Review review){
-        // find authentation by firebase_id
-//        Product product = productRepository.findByProductStringId(id);
-//        if (product == null) {
-//            throw new IllegalArgumentException("Product not found with ID: " + id);
-//        }
-//        // includes comment, rating etc.
-//        product.setReview(review);
-//        productRepository.save(product);
-//        return review.getComment();
         // Query to find the product by its string ID
         Query query = new Query();
         query.addCriteria(Criteria.where("productStringId").is(id));
