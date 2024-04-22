@@ -52,7 +52,7 @@ public class UserController {
             // 将 Token 放在响应头部中返回给客户端
             HttpHeaders headers = new HttpHeaders();
             headers.add("Authorization", "Bearer " + token);
-
+            headers.add("Access-Control-Expose-Headers", "Authorization");
             return ResponseEntity.ok()
                     .headers(headers)
                     .body("Login successful");
