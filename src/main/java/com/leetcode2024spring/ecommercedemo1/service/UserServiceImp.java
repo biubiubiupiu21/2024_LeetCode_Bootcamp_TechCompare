@@ -111,5 +111,87 @@ public class UserServiceImp implements UserService {
         return true;
     }
 
+    public boolean addToWishlist(@RequestParam String email, @RequestParam String productStringId) {
+        // Find the user by email
+        User user = userRepository.findByEmail(email);
+        if (user == null) {
+            // Return false or handle the case where user does not exist
+            return false;
+        }
+
+        List<wlist> wishlist = user.getWishlist();
+
+        // Check if the product is already in the wishlist
+        for (wlist item : wishlist) {
+            if (item.getProductStringId().equals(productStringId)) {
+                // Product is already in the wishlist, return true or handle accordingly
+                return true;
+            }
+        }
+
+        // If not already in the wishlist, add the new product
+        wishlist.add(new wlist(new Date(), productStringId));
+
+        // Create an Update object
+        Update update = new Update();
+        update.set("wishlist", wishlist);  // Set the updated wishlist
+
+        // Create a query object for the update operation
+        Query query = new Query();
+        query.addCriteria(Criteria.where("email").is(email));
+
+        // Execute the update operation
+        mongoTemplate.updateFirst(query, update, User.class);
+        return true;
+    }
+
+    public boolean removeFromWishlist(@RequestParam String email, @RequestParam String productStringId) {
+        // 查找用户
+        User user = userRepository.findByEmail(email);
+        if (user == null) {
+            // 用户不存在，返回 false
+            return false;
+        }
+        System.out.println(111);
+
+        List<wlist> wishlist = user.getWishlist();
+        boolean productFound = false; // 标记是否找到产品
+        System.out.println(222);
+
+        // 检查产品是否在愿望清单中，并移除
+        Iterator<wlist> iterator = wishlist.iterator();
+        while (iterator.hasNext()) {
+            wlist item = iterator.next();
+            if (item.getProductStringId().equals(productStringId)) {
+                iterator.remove();  // 使用迭代器安全移除
+                productFound = true;
+            }
+        }
+        System.out.println(333);
+
+        // 如果产品未找到，返回 false
+        if (!productFound) {
+            return false;
+        }
+        System.out.println(444);
+
+        // 创建更新对象
+        Update update = new Update();
+        update.set("wishlist", wishlist);  // 设置更新后的愿望清单
+
+        // 创建查询对象
+        Query query = new Query();
+        query.addCriteria(Criteria.where("email").is(email));
+        System.out.println(555);
+
+        // 执行更新操作
+        mongoTemplate.updateFirst(query, update, User.class);
+        return true;
+    }
+
+
+
+
+
 
 }

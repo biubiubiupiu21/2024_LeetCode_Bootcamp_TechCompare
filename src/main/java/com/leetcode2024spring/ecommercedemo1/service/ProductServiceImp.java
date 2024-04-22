@@ -159,9 +159,6 @@ public class ProductServiceImp {
         } else if (maxPrice != null) {
             criteria = criteria.and("currentPrice").lte(maxPrice);
         }
-//        if (store != null) {
-//            criteria = criteria.and("store").is(store);
-//        }
 
         query.addCriteria(criteria);
 
