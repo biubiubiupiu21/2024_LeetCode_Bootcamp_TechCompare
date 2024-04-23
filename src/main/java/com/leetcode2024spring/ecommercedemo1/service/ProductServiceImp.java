@@ -143,26 +143,39 @@ public class ProductServiceImp {
 
     public List<Product> findProductsByCriteria(String category, String brand, Double minPrice, Double maxPrice, String store) {
         Query query = new Query();
-        
-        Criteria criteria = new Criteria();
+        List<Criteria> conditions = new ArrayList<>();
 
-        if (category != null) {
-            criteria = criteria.and("category").is(category);
+        if (category.length() != 0) {
+            conditions.add(Criteria.where("category").is(category));
         }
-        if (brand != null) {
-            criteria = criteria.and("brand").is(brand);
+
+        if (brand.length() != 0) {
+            conditions.add(Criteria.where("brand").is(brand));
         }
+
         if (minPrice != null && maxPrice != null) {
-            criteria = criteria.and("currentPrice").gte(minPrice).lte(maxPrice); // Ensuring that price is between minPrice and maxPrice
+            conditions.add(Criteria.where("currentPrice").gte(minPrice).lte(maxPrice));
         } else if (minPrice != null) {
-            criteria = criteria.and("currentPrice").gte(minPrice);
+            conditions.add(Criteria.where("currentPrice").gte(minPrice));
         } else if (maxPrice != null) {
-            criteria = criteria.and("currentPrice").lte(maxPrice);
+            conditions.add(Criteria.where("currentPrice").lte(maxPrice));
         }
 
-        query.addCriteria(criteria);
+        if (store != null) {
+            conditions.add(Criteria.where("store").is(store));
+        }
 
-        return mongoTemplate.find(query, Product.class);
+        if (!conditions.isEmpty()) {
+            Criteria combinedCriteria = new Criteria().andOperator(conditions.toArray(new Criteria[0]));
+            query.addCriteria(combinedCriteria);
+        }
+
+        System.out.println(query.toString());  // Log the query to understand its final form
+
+        List<Product> products = mongoTemplate.find(query, Product.class);
+        System.out.println(products);  // Print the query results if needed
+
+        return products;
     }
 
 
