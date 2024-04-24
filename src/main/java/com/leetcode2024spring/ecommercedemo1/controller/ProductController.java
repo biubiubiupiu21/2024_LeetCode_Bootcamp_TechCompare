@@ -103,6 +103,15 @@ public class ProductController {
         }
         return ResponseEntity.ok(price);
     }
+    @GetMapping("/{productStringId}/currentprice")
+    public double getProductCurrentPrice(@PathVariable String productStringId) {
+        Double price = productService.getPriceByProductId(productStringId);
+        if (price == null) {
+            return 0.0;
+        }
+        System.out.println("CurrentPrice: " +price);
+        return price;
+    }
 
     @GetMapping("/{productStringId}/price-history")
     public ResponseEntity<List<PriceHistory>> getPriceHistoryByProductId(@PathVariable String productStringId) {
@@ -145,10 +154,6 @@ public class ProductController {
         Product product2 = productService.getByProductStringId(productId2);
 
         if (product1 != null && product2 != null) {
-            // Perform comparison based on price
-//            String priceComparison = productService.compareProductsByPrice(product1, product2);
-//            // Perform comparison based on category
-//            String categoryComparison = productService.compareProductsByCategory(product1, product2);
                 ans.add(product1);
                 ans.add(product2);
             // You can return both comparisons or choose to return one
@@ -174,6 +179,14 @@ public class ProductController {
     @GetMapping("/getest2")
     public void getest2(){
         productService.printAllProducts();
+    }
+
+    @PostMapping("/updatepricehist")
+    public void updatepricehis(@RequestParam("productId")String productId, @RequestParam("newPrice")double newPrice){
+        // add
+        String ret = productService.addPriceHistory(productId,newPrice);
+        System.out.println("addpricehist");
+        System.out.println(ret);
     }
 }
 

@@ -188,10 +188,4 @@ public class UserServiceImp implements UserService {
         mongoTemplate.updateFirst(query, update, User.class);
         return true;
     }
-
-
-
-
-
-
 }
