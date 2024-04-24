@@ -18,11 +18,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
     // when add path no /techCompare
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(tokenInterceptor)
-                .addPathPatterns("/**") // 拦截其他所有路径
-                .excludePathPatterns("/user/login")// 排除登录接口
-                .excludePathPatterns("/products/getall")
-                .excludePathPatterns("/products/search")
-                .excludePathPatterns("/user/register");
+                // 拦截
+                .addPathPatterns("/user/getWishlist")
+                .addPathPatterns("/user/addWishlist")
+                .addPathPatterns("/user/removeFromWishlist")
+                .addPathPatterns("/products/sendreview")
+
+                // 其他所有
+                .excludePathPatterns("/**");
     }
 
     @Override

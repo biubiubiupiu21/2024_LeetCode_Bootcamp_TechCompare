@@ -8,20 +8,10 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/StoreInventoryDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/interceptor/MyInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/collection/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/controller/UserController.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/collection/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/StoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/StoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/interceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/interceptor/TokenInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode2024spring/ecommercedemo1/service/ProductServiceImp.class" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

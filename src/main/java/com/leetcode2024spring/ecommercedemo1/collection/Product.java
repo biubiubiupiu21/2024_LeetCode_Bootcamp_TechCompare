@@ -131,13 +131,6 @@ public class Product {
         return priceHistory;
     }
 
-    //<<<<<<< HEAD
-//    public List<Review> getReview() {
-//        return this.review;
-//    }
-//
-//=======
-//>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
     public void setReview(Review review) {
         this.review.add(review);
 //        review.setProduct(this); // Ensuring the bidirectional link is maintained

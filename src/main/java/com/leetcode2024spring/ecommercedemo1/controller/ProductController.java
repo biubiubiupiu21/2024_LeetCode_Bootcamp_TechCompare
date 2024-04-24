@@ -154,10 +154,6 @@ public class ProductController {
         Product product2 = productService.getByProductStringId(productId2);
 
         if (product1 != null && product2 != null) {
-            // Perform comparison based on price
-//            String priceComparison = productService.compareProductsByPrice(product1, product2);
-//            // Perform comparison based on category
-//            String categoryComparison = productService.compareProductsByCategory(product1, product2);
                 ans.add(product1);
                 ans.add(product2);
             // You can return both comparisons or choose to return one
