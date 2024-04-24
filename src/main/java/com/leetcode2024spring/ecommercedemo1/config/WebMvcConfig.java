@@ -3,6 +3,7 @@ package com.leetcode2024spring.ecommercedemo1.config;
 import com.leetcode2024spring.ecommercedemo1.interceptor.TokenInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -22,6 +23,17 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/products/getall")
                 .excludePathPatterns("/products/search")
                 .excludePathPatterns("/user/register");
+    }
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/techCompare/**")
+                .allowedOrigins("http://localhost:3000") // 允许的前端来源
+                .allowedMethods("GET", "POST", "PUT", "DELETE") // 允许的请求方法
+                .allowedHeaders("*") // 允许的请求头部
+                .exposedHeaders("auth") // 允许暴露的头部信息
+                .allowCredentials(true) // 是否允许发送Cookie
+                .maxAge(3600); // 预检请求的有效期，单位秒
     }
 
 

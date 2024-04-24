@@ -99,7 +99,39 @@ public class Product {
         this.priceHistory = priceHistory;
     }
 
-//<<<<<<< HEAD
+    public String getProductStringId() {
+        return productStringId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public Map<String, String> getSpecifications() {
+        return specifications;
+    }
+
+    public List<PriceHistory> getPriceHistory() {
+        return priceHistory;
+    }
+
+    //<<<<<<< HEAD
 //    public List<Review> getReview() {
 //        return this.review;
 //    }

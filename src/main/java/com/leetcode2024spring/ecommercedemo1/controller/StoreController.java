@@ -3,21 +3,20 @@ package com.leetcode2024spring.ecommercedemo1.controller;
 import com.leetcode2024spring.ecommercedemo1.collection.Inventory;
 import com.leetcode2024spring.ecommercedemo1.collection.Product;
 import com.leetcode2024spring.ecommercedemo1.collection.Store;
+import com.leetcode2024spring.ecommercedemo1.collection.StoreInventoryDTO;
 import com.leetcode2024spring.ecommercedemo1.service.ProductServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.StoreService;
 import com.leetcode2024spring.ecommercedemo1.service.StoreServiceImp;
 import com.leetcode2024spring.ecommercedemo1.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/store")
 public class StoreController {
     @Autowired
@@ -26,20 +25,20 @@ public class StoreController {
     private ProductServiceImp productService;
 
     @GetMapping("/getStoreByInventoryQuantity")
-    public List<Store> getStoreByQuantity(String productStringId){
-        List<Store> allStore = storeService.getAllStore();
-        List<Store> res = new ArrayList<>();
-        for(Store s: allStore){
-            List<Inventory> inventories = s.getInventory();
-            for(Inventory inv: inventories){
-                if(inv.getProductStringId().equals(productStringId) && inv.getQuantity() != 0){
-                    res.add(s);
-                    break;
+    public List<StoreInventoryDTO> getStoreByQuantity(@RequestParam String productStringId) {
+        List<Store> allStores = storeService.getAllStore();
+        List<StoreInventoryDTO> result = new ArrayList<>();
+        for (Store store : allStores) {
+            for (Inventory inventory : store.getInventory()) {
+                if (inventory.getProductStringId().equals(productStringId) && inventory.getQuantity() > 0) {
+                    result.add(new StoreInventoryDTO(store, inventory.getQuantity()));
+                    break; // Breaks after adding the store once with the needed product quantity
                 }
             }
         }
-        return res;
+        return result;
     }
+
 
 
 

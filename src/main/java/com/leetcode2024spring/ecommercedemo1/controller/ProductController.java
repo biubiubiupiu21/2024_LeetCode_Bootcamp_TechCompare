@@ -103,6 +103,15 @@ public class ProductController {
         }
         return ResponseEntity.ok(price);
     }
+    @GetMapping("/{productStringId}/currentprice")
+    public double getProductCurrentPrice(@PathVariable String productStringId) {
+        Double price = productService.getPriceByProductId(productStringId);
+        if (price == null) {
+            return 0.0;
+        }
+        System.out.println("CurrentPrice: " +price);
+        return price;
+    }
 
     @GetMapping("/{productStringId}/price-history")
     public ResponseEntity<List<PriceHistory>> getPriceHistoryByProductId(@PathVariable String productStringId) {
@@ -174,6 +183,14 @@ public class ProductController {
     @GetMapping("/getest2")
     public void getest2(){
         productService.printAllProducts();
+    }
+
+    @PostMapping("/updatepricehist")
+    public void updatepricehis(@RequestParam("productId")String productId, @RequestParam("newPrice")double newPrice){
+        // add
+        String ret = productService.addPriceHistory(productId,newPrice);
+        System.out.println("addpricehist");
+        System.out.println(ret);
     }
 }
 

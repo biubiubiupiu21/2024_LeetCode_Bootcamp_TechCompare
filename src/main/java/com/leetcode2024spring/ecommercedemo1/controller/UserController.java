@@ -78,15 +78,15 @@ public class UserController {
     }
 
     @PostMapping("/addWishlist") // 改为使用 POST 方法
-    public boolean addWishlist(@RequestParam String email, @RequestParam String productId) {
+    public String addWishlist(@RequestParam String email, @RequestParam String productId) {
         System.out.println("addwishlist__");
         try {
             userService.addToWishlist(email, productId);
             System.out.println("add to wishlist");
         } catch (Exception e) {
-            return false;
+            return "fail add to wish list";
         }
-        return false;
+        return "add"+ productId +" to wish list";
     }
 
     @PostMapping("/removeFromWishlist") // 改为使用 POST 方法
@@ -95,10 +95,10 @@ public class UserController {
         try {
             userService.removeFromWishlist(email, productId);
             System.out.println("remove From wishlist");
+            return true;
         } catch (Exception e) {
             return false;
         }
-        return false;
     }
 
 

@@ -240,6 +240,23 @@ public class ProductServiceImp {
         return product;
     }
 
+    @Transactional
+    public String addPriceHistory(String productId, double newPrice) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("productStringId").is(productId));
+
+        // Create a new price history entry
+        PriceHistory priceHistory = new PriceHistory(new Date(), newPrice);
+
+        // Use MongoDB's $push operator to add the new price history to the priceHistory array
+        Update update = new Update();
+        update.push("priceHistory", priceHistory);
+
+        // Perform the update operation
+        mongoTemplate.updateFirst(query, update, Product.class);
+        return "Price history added successfully for product ID: " + productId;
+    }
+
 
 
 }
