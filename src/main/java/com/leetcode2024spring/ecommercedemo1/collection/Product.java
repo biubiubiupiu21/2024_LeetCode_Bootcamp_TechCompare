@@ -99,13 +99,38 @@ public class Product {
         this.priceHistory = priceHistory;
     }
 
-//<<<<<<< HEAD
-//    public List<Review> getReview() {
-//        return this.review;
-//    }
-//
-//=======
-//>>>>>>> 646df16869f0e8794830920f1a982ba77f8f4733
+    public String getProductStringId() {
+        return productStringId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public Map<String, String> getSpecifications() {
+        return specifications;
+    }
+
+    public List<PriceHistory> getPriceHistory() {
+        return priceHistory;
+    }
+
     public void setReview(Review review) {
         this.review.add(review);
 //        review.setProduct(this); // Ensuring the bidirectional link is maintained
